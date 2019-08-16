@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.SysRoleEntity" table="sys_role" schema="teacher_files">
+        <id name="roleId">
+            <column name="role_id" sql-type="int(11)"/>
+        </id>
+        <property name="roleName">
+            <column name="role_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="canLook">
+            <column name="can_look" sql-type="int(11)" not-null="true"/>
+        </property>
+        <!--菜单类与角色类多对多-->
+        <set name="menuSet" table="role_menu" schema="teacher_files" catalog="">
+            <key>
+                <column name="role_id" not-null="true"/>
+            </key>
+            <many-to-many not-found="ignore" class="com.teacherfiles.models.sys.model.SysMenuEntity">
+                <column name="menu_id" not-null="true"/>
+            </many-to-many>
+        </set>
+        <!--true:默认取值，它的意思是只有在调用这个集合获取里面的元素对象时，才发出查询语句，加载其集合元素的数据
+
+            false:取消懒加载特性，即在加载对象的同时，就发出第二条查询语句加载其关联集合的数据
+
+            extra:一种比较聪明的懒加载策略，即调用集合的size/contains等方法的时候，hibernate并不会去加载整个集合的数据，
+            而是发出一条聪明的SQL语句，以便获得需要的值，只有在真正需要用到这些集合元素对象数据的时候，
+            才去发出查询语句加载所有对象的数据
+            -->
+    </class>
+</hibernate-mapping>

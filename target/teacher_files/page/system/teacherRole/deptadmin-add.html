@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">教师工号</label>
+        <div class="layui-input-block">
+            <input type="hidden" class="layui-input updateFlag" value="0"><!--更新-->
+            <input type="hidden" class="layui-input Id">
+            <input type="hidden" class="layui-input deptHide"><!--中间变量-->
+            <input type="text" class="layui-input teacherCode" lay-verify="required" placeholder="请输入教师工号">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">教师姓名</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input teacherName" lay-verify="required" placeholder="请输入教师姓名">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">所属部门</label>
+        <div class="layui-input-block">
+            <select name="deptId" lay-filter="sysBunk" id="deptId" class="deptId" lay-search=""></select>
+        </div>
+    </div>
+    <!--<div class="layui-form-item layui-row layui-col-xs12">-->
+        <!--<label class="layui-form-label">所属教研室</label>-->
+        <!--<input type="hidden" name="deptHide" class="layui-input unitHide">&lt;!&ndash;中间变量&ndash;&gt;-->
+        <!--<div class="layui-input-block unitIds" id="unitIds"></div>-->
+    <!--</div>-->
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="addUser" id="addUser" value="确认添加" />
+    </div>
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script type="text/javascript" src="deptadmin-add.js"></script>
+</body>
+</html>

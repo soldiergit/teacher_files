@@ -1,0 +1,24 @@
+弹出层 layer
+日期与时间选择 laydate
+即时通讯 layim
+分页 laypage
+模板引擎 laytpl
+数据表格 table
+    lay-even 	无 	用于开启 隔行 背景，可与其它属性一起使用
+    lay-skin="属性值" 	line （行边框风格）
+                        row （列边框风格）
+                        nob （无边框风格） 	若使用默认风格不设置该属性即可
+    lay-size="属性值" 	sm （小尺寸）
+                        lg （大尺寸） 	若使用默认尺寸不设置该属性即可
+表单 form
+文件上传 upload
+穿梭框 transfer
+树形组件 tree
+颜色选择器 colorpicker
+常用元素操作 element
+滑块 slider
+评分 rate
+轮播 carousel
+流加载 flow
+工具集 util
+代码修饰器 code

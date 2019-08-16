@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <div class="layui-form-item layui-hide">
+            <label class="layui-form-label">ID</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input itemId">
+            </div>
+        </div>
+        <label class="layui-form-label">项目名称</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input itemName">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目主持人/负责人</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input personName">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目类型</label>
+        <div class="layui-input-block">
+            <select name="itemType" class="itemType">
+                <option value="1">教改类</option>
+                <option value="2">科研类</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目类别</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input itemCategory">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">立项时间</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input createTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">项目经费（万元）</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input itemMoney">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">项目级别</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input itemLevel">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">合同编号</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input contractNumber">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目成员</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input memberName">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">起始时间</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input startTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">结束时间</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input endTime">
+        </div>
+    </div>
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script type="text/javascript" src="item-detail.js"></script>
+</body>
+</html>

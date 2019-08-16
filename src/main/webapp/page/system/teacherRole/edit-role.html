@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">教师工号</label>
+        <div class="layui-input-block">
+            <input type="hidden" class="layui-input Id">
+            <input type="hidden" class="layui-input roleHide"><!--中间变量-->
+            <input type="text" class="layui-input layui-disabled teacherCode">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">教师姓名</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input layui-disabled teacherName">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">教师角色</label>
+        <div class="layui-input-block roleSet" id="roleSet"></div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">入职时间</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input layui-disabled entryTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">最高学历</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input layui-disabled highEdu">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">第一学历</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input layui-disabled firstEdu">
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="addUser" id="addUser" value="确认添加" />
+    </div>
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script type="text/javascript" src="edit-role.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" id="studentInfo" lay-filter="studentInfo" style="width:80%;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">项目名称</label>
+        <div class="layui-input-block">
+            <input type="hidden" class="layui-input Id"><!--项目id-->
+            <input type="hidden" class="layui-input studentId"><!--学生id-->
+            <input type="hidden" class="layui-input updateFlag" value="0"><!--更新-->
+            <input type="text" class="layui-input itemName" style="color: red">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">学生学号</label>
+        <div class="layui-input-block">
+            <input type="text" name="studentCode" lay-verify="required|number" placeholder="请输入学生学号" class="layui-input studentCode" autocomplete="off" value="20160007261616">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-block">
+            <input type="text" name="studentName" lay-verify="required" placeholder="请输入学生姓名" class="layui-input studentName" autocomplete="off">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">是否队长</label>
+        <div class="layui-input-block isPerson" id="isPersons">
+            <input type="radio" name="isPerson" value="1" title="是">
+            <input type="radio" name="isPerson" value="0" title="否" checked>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">手机号</label>
+        <div class="layui-input-block">
+            <input type="text" name="studentPhone" lay-verify="required|phone" placeholder="请输入学生手机号" class="layui-input studentPhone" autocomplete="off" value="18277404022">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">邮箱</label>
+        <div class="layui-input-block">
+            <input type="text" name="studentEmail" lay-verify="required|email" placeholder="请输入号码" class="layui-input studentEmail" autocomplete="off" value="583403411@qq.com">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">专业名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="major" lay-verify="required" placeholder="请输入学生专业名称" class="layui-input major" autocomplete="off" value="暂无">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">班级名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="className" lay-verify="required" placeholder="请输入号码" class="layui-input className" autocomplete="off" value="暂无">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">项目分工</label>
+        <div class="layui-input-block">
+                <textarea name="jobContent" lay-verify="required" style="width: 400px; height: 150px;" class="layui-textarea jobContent"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <div class="layui-input-block">
+            <button id="addStudent" lay-submit="" lay-filter="addStudent">提交</button>
+        </div>
+    </div>
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script src="member-add.js"></script>
+</body>
+</html>

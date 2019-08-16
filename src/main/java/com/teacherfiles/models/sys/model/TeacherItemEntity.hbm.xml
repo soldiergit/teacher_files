@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.TeacherItemEntity" table="teacher_item" schema="teacher_files">
+        <id name="itemId">
+            <column name="item_id" sql-type="int(11)"/>
+        </id>
+        <property name="itemName">
+            <column name="item_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="itemType">
+            <column name="item_type" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="contractNumber">
+            <column name="contract_number" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="itemMoney">
+            <column name="item_money" sql-type="float(5,2)" precision="5" scale="2" not-null="true"/>
+        </property>
+        <property name="itemPerson">
+            <column name="item_person" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="itemMember">
+            <column name="item_member" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="memberName">
+            <column name="member_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="createTime">
+            <column name="create_time" sql-type="date" not-null="true"/>
+        </property>
+        <property name="startTime">
+            <column name="start_time" sql-type="date" not-null="true"/>
+        </property>
+        <property name="endTime">
+            <column name="end_time" sql-type="date" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

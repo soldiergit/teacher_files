@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.MatchEntity" table="sys_match" schema="teacher_files">
+        <id name="matchId">
+            <column name="match_id" sql-type="int(11)"/>
+        </id>
+        <property name="matchName">
+            <column name="match_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="matchLevel">
+            <column name="match_level" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="matchType">
+            <column name="match_type" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="organizer">
+            <column name="organizer" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="contractor">
+            <column name="contractor" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <!--<property name="matchTime">-->
+            <!--<column name="match_time" sql-type="date" not-null="true"/>-->
+        <!--</property>-->
+    </class>
+</hibernate-mapping>

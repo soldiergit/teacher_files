@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.SysMenuEntity" table="sys_menu" schema="teacher_files">
+        <id name="menuId">
+            <column name="menu_id" sql-type="int(11)"/>
+        </id>
+        <property name="href">
+            <column name="href" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="icon">
+            <column name="icon" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="spread">
+            <column name="spread" sql-type="tinyint(4)" not-null="true"/>
+        </property>
+        <property name="title">
+            <column name="title" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <!--<property name="roleType">-->
+            <!--<column name="role_type" sql-type="varchar(255)" not-null="true"/>-->
+        <!--</property>-->
+        <!--inverse="true" :: 将控制权交给多的多的一方-->
+        <set name="children" inverse="true">
+            <key/>
+            <one-to-many not-found="ignore" class="com.teacherfiles.models.sys.model.SysMenuChildrenEntity"/>
+        </set>
+        <!--菜单类与角色类多对多-->
+        <set name="roleSet" inverse="true" table="role_menu" schema="teacher_files" catalog="">
+            <key>
+                <column name="menu_id"/>
+            </key>
+            <many-to-many not-found="ignore" class="com.teacherfiles.models.sys.model.SysRoleEntity">
+                <column name="role_id"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

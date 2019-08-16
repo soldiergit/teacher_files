@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.DeptEntity" table="dept" schema="teacher_files">
+        <id name="deptId">
+            <column name="dept_id" sql-type="int(11)"/>
+        </id>
+        <property name="deptName">
+            <column name="dept_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="deptPerson">
+            <column name="dept_person" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="deptPhone">
+            <column name="dept_phone" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <!--parent:本类与DeptEntity(上级级) 多对一-->
+        <many-to-one name="parent" class="com.teacherfiles.models.sys.model.DeptEntity"/>
+        <!--children:本类与DeptEntity(下级) 一对多-->
+        <set name="children">
+            <key/>
+            <one-to-many not-found="ignore" class="com.teacherfiles.models.sys.model.DeptEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

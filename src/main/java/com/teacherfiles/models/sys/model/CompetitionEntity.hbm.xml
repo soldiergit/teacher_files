@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.CompetitionEntity" table="competition" schema="teacher_files">
+        <id name="itemId">
+            <column name="item_id" sql-type="int(11)"/>
+        </id>
+        <property name="itemName">
+            <column name="item_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="prizeTime">
+            <column name="prize_time" sql-type="date" not-null="true"/>
+        </property>
+        <property name="prizeImg">
+            <column name="prize_img" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="deptId">
+            <column name="dept_id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="deptName">
+            <column name="dept_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="matchId">
+            <column name="match_id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="matchName">
+            <column name="match_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="awardee">
+            <column name="awardee" sql-type="varchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

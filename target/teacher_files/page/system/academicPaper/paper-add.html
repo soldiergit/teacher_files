@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" id="userInfo" lay-filter="userInfo" style="width:80%;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">论文名称</label>
+        <div class="layui-input-block">
+            <input type="hidden" class="layui-input updateFlag" value="0"><!--更新-->
+            <input type="hidden" class="layui-input Id">
+            <input type="hidden" class="layui-input teacherHide"><!--中间变量-->
+            <input type="hidden" class="layui-input paperGradeHide"><!--中间变量-->
+            <input type="text" name="paperName" lay-verify="required" placeholder="请输入论文名称" autocomplete="off"
+                   class="layui-input paperName">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">论文标题</label>
+        <div class="layui-input-block">
+            <input type="text" name="paperTitle" lay-verify="required" placeholder="请输入论文标题" autocomplete="off"
+                   class="layui-input paperTitle">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">作者</label>
+        <div class="layui-input-block">
+            <select name="teacherId" class="teacherId" lay-verify="required" lay-filter="sysBunk" id="sysBunk" lay-search=""></select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">作者类型</label>
+        <div class="layui-input-block">
+            <select name="teacherType" class="teacherType" lay-verify="required">
+                <option value="1">第一作者或通讯作者</option>
+                <option value="2">独立作者</option>
+                <option value="3">其它</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">论文类型</label>
+        <div class="layui-input-block">
+            <select name="paperType" class="paperType" lay-verify="required">
+                <option value="1">教改类</option>
+                <option value="2">科研类</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">署名单位</label>
+        <div class="layui-input-block">
+            <select name="signUnit" class="signUnit" lay-verify="required">
+                <option value="1">第一署名单位</option>
+                <option value="2">第二署名单位</option>
+                <option value="3">其它</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发布期刊</label>
+        <div class="layui-input-block">
+            <input type="text" name="periodicalName" lay-verify="required" placeholder="请输入发布期刊名称"
+                   autocomplete="off"
+                   class="layui-input periodicalName">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">期刊号</label>
+        <div class="layui-input-block">
+            <input type="text" name="periodicalNumber" lay-verify="required" placeholder="请输入期刊号" autocomplete="off"
+                   class="layui-input periodicalNumber">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发布时间</label>
+        <div class="layui-input-block">
+            <input type="text" name="publishTime" id="publishTime" lay-verify="required" placeholder="请选择发布时间" class="layui-input publishTime" >
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">论文等级</label>
+        <div class="layui-input-block">
+            <select name="paperGrade" class="paperGrade" lay-verify="required" id="paperGrade" lay-search=""></select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-upload">
+            <button type="button" class="layui-btn layui-btn-normal" id="testList">选择多文件</button>
+            <div class="layui-inline layui-word-aux">单单文件上限10M</div>
+            <div class="layui-upload-list">
+                <table class="layui-table">
+                    <thead>
+                    <tr><th>文件名</th>
+                        <th>大小</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr></thead>
+                    <tbody id="demoList"></tbody>
+                </table>
+            </div>
+            <button type="button" class="layui-btn" id="testListAction">开始上传</button>
+            <input type="hidden" class="manyFilePath" id="manyFilePath"/>
+            <input type="hidden" class="manyFileName" id="manyFileName" />
+            <input type="hidden" class="manyFileType" id="manyFileType" />
+        </div>
+    </div>
+    <!--<div class="layui-form-item">-->
+    <!--<label class="layui-form-label">发布状态</label>-->
+    <!--<div class="layui-input-inline">-->
+    <!--<input type="checkbox" lay-verify="required" lay-filter="status" name="status" lay-skin="switch"-->
+    <!--lay-text="已发布|待修改">-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="addUser" id="addUser" value="添加">
+    </div>
+    <script src="/teacher_files_war/static/layui/layui.js"></script>
+    <script type="text/javascript" src="paper-add.js"></script>
+</form>
+</body>
+</html>

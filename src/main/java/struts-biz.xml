@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="messageResource" />
+	<!-- 设置上传限制为100M -->
+	<constant name="struts.multipart.maxSize" value="109715200" />
+	<!-- 编码设置 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+	<!-- 定义业务模块设置模块 -->
+	<package name="biz" extends="json-default" namespace="/biz" strict-method-invocation="false">
+        <!--教师-->
+        <action name="teacher_*" class="com.teacherfiles.models.sys.action.teacher.TeacherAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">r</param>
+            </result>
+        </action>
+		<!--部门-->
+		<action name="dept_*" class="com.teacherfiles.models.sys.action.dept.DeptAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--部门成员-->
+		<action name="deptMember_*" class="com.teacherfiles.models.sys.action.deptOfTeacher.DeptOfTeacherAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--赛事-->
+		<action name="match_*" class="com.teacherfiles.models.sys.action.match.MatchAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--赛事附件-->
+		<action name="matchAnnex_*" class="com.teacherfiles.models.sys.action.matchAnnex.MatchAnnexAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--竞赛-->
+		<action name="competition_*" class="com.teacherfiles.models.sys.action.competition.CompetitionAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--竞赛获奖级别-->
+		<action name="competitionPrizeLevel_*" class="com.teacherfiles.models.sys.action.competitionPrizeLevel.CompetitionPrizeLevelAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--竞赛获奖等次-->
+		<action name="competitionPrizeGrade_*" class="com.teacherfiles.models.sys.action.competitionPrizeGrade.CompetitionPrizeGradeAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--竞赛项目成员-->
+		<action name="student_*" class="com.teacherfiles.models.sys.action.student.StudentAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+        <!--教师项目-->
+        <action name="teacherItem_*" class="com.teacherfiles.models.sys.action.teacherItem.TeacherItemAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">r</param>
+            </result>
+        </action>
+        <!--教师项目类别-->
+        <action name="teacherItemCategory_*" class="com.teacherfiles.models.sys.action.teacherItemCategory.TeacherItemCategoryAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">r</param>
+            </result>
+        </action>
+        <!--教师项目级别-->
+        <action name="teacherItemLevel_*" class="com.teacherfiles.models.sys.action.teacherItemLevel.TeacherItemLevelAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">r</param>
+            </result>
+        </action>
+		<!--学术论文-->
+		<action name="paper_*" class="com.teacherfiles.models.sys.action.academicPaper.AcademicPaperAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--学术论文等级-->
+		<action name="paperGrade_*" class="com.teacherfiles.models.sys.action.academicPaperGrade.AcademicPaperGradeAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--学术论文附件-->
+		<action name="paperAnnex_*" class="com.teacherfiles.models.sys.action.academicPaperAnnex.AcademicPaperAnnexAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+	</package>
+
+	<!-- 定义业务模块设置模块 -->
+	<package name="download" extends="struts-default" namespace="/download" strict-method-invocation="false">
+		<!--文件下载-->
+		<action name="download_*" class="com.teacherfiles.models.sys.action.download.DownLoadAction" method="{1}">
+			<result name="success" type="stream"><!-- result类型是流(stream)类型 -->
+				<param name="inputName">inputStream</param><!-- inputName指向被下载文件的来源,对应Action中返回的InputStream -->
+				<param name="contentType">${contentType}</param><!-- 下载的内容类型，如图片类型、文档类型等…… -->
+				<param name="contentDisposition">
+					<!-- 指定文件下载的处理方式，内联(inline)和附件(attachment)两种方式，attachment会弹出文件保存对话框 -->
+					attachment;filename=${filename}
+				</param>
+			</result>
+		</action>
+	</package>
+</struts>    

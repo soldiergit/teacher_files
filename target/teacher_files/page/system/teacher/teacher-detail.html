@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">基本信息</li>
+            <li>论文信息</li>
+            <li>负责赛事</li>
+            <li>学科竞赛</li>
+            <li>科研项目</li>
+        </ul>
+        <div class="layui-tab-content" style="text-align: center;">
+            <input type="hidden" class="layui-input thisTeacherId">
+            <!--基本信息-->
+            <div class="layui-tab-item layui-show">
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input teacherName"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">个人照片</label>
+                    <div class="layui-input-inline layui-upload" style="width: auto;">
+                        <img class="layui-upload-img imgPreview" width="144" height="172" onclick="show_img(this)">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">性别</label>
+                    <div class="layui-input-block teacherSex">
+                        <input type="text" class="layui-input teacherSex"/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">工号</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input teacherCode"/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">所属部门</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input deptName"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row layui-col-xs12">
+                    <label class="layui-form-label">所属教研室</label>
+                    <input type="hidden" name="deptHide" class="layui-input unitHide"><!--中间变量-->
+                    <div class="layui-input-block unitIds" id="unitIds"></div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">角色</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input roleName"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">出生年月</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input teacherBirth"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">入职时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input entryTime"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">最高学历</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input highEdu"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <label class="layui-form-label">第一学历</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input firstEdu"/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">专业职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input technicalPost"/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">行政职务</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input administPost"/>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row layui-col-xs12">
+                    <label class="layui-form-label">从事工作</label>
+                    <div class="layui-input-block">
+                        <textarea name="other" class="layui-textarea other"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row layui-col-xs12">
+                    <label class="layui-form-label">简历</label>
+                    <div class="layui-input-block">
+                        <textarea name="teacherResume" class="layui-textarea teacherResume"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!--其他信息-->
+            <div class="layui-tab-item">
+                <div class="layui-inline">
+                    <table id="paperInfoList" lay-filter="paperInfoList"></table>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="layui-inline">
+                    <table id="matchInfoList" lay-filter="matchInfoList"></table>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="layui-inline">
+                    <table id="raceInfoList" lay-filter="raceInfoList"></table>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="layui-inline">
+                    <table id="teacherItemInfoList" lay-filter="teacherItemInfoList"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script type="text/javascript" src="teacher-detail.js"></script>
+</body>
+</html>

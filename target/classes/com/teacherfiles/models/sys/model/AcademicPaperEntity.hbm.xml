@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.AcademicPaperEntity" table="academic_paper" schema="teacher_files">
+        <id name="paperId">
+            <column name="paper_id" sql-type="int(11)"/>
+        </id>
+        <property name="paperName">
+            <column name="paper_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="paperType">
+            <column name="paper_type" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="paperTitle">
+            <column name="paper_title" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="teacherType">
+            <column name="teacher_type" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="signUnit">
+            <column name="sign_unit" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="periodicalName">
+            <column name="periodical_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="periodicalNumber">
+            <column name="periodical_number" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="publishTime">
+            <column name="publish_time" sql-type="date" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

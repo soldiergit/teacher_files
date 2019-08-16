@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 定义系统设置模块 -->
+	<package name="system" extends="json-default" namespace="/" strict-method-invocation="false">
+		<!-- 登陆 -->
+		<action name="login_*" class="com.teacherfiles.models.sys.action.login.LoginAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!--系统用户-->
+		<action name="sysuser_*" class="com.teacherfiles.models.sys.action.sysuser.SysUserAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!--菜单-->
+		<action name="menu_*" class="com.teacherfiles.models.sys.action.sysmenu.MenuAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--二级菜单-->
+		<action name="menuChildren_*" class="com.teacherfiles.models.sys.action.sysmenuChildren.MenuChildrenAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--角色-->
+		<action name="role_*" class="com.teacherfiles.models.sys.action.sysrole.RoleAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
+		<!--文件、头像上传-->
+		<action name="upload_*" class="com.teacherfiles.models.sys.action.upload.UploadAction" method="{1}">
+            <result name="success" type="json">
+                <param name="root">r</param>
+            </result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师档案信息管理系统</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目名称</label>
+        <div class="layui-input-block">
+            <input type="hidden" class="layui-input updateFlag" value="0"><!--更新-->
+            <input type="hidden" class="layui-input Id">
+            <input type="hidden" class="layui-input deptHide"><!--中间变量-->
+            <input type="hidden" class="layui-input personHide"><!--中间变量-->
+            <input type="hidden" class="layui-input memberHide"><!--中间变量-->
+            <input type="hidden" class="layui-input itemCategoryHide"><!--中间变量-->
+            <input type="hidden" class="layui-input itemLevelHide"><!--中间变量-->
+            <input type="text" class="layui-input itemName" lay-verify="required" placeholder="请输入科研项目名称">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目主持人/负责人</label>
+        <div class="layui-input-block">
+            <select name="itemPerson" lay-filter="itemPerson" class="itemPerson" id="itemPerson" lay-search=""></select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目类型</label>
+        <div class="layui-input-block">
+            <select name="itemType" class="itemType" lay-filter="itemType">
+                <!--<option value="">请先选择</option>-->
+                <option value="1">教改类</option>
+                <option value="2">科研类</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">项目类别</label>
+        <div class="layui-input-block">
+            <select name="itemCategory" lay-filter="itemCategory" class="itemCategory" id="itemCategory" lay-search=""></select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">立项时间</label>
+        <div class="layui-input-block">
+            <input type="text" name="createTime" id="createTime" lay-verify="required" placeholder="请选择项目立项时间" class="layui-input createTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">项目经费（万元）</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input itemMoney" lay-verify="required" placeholder="请输入项目经费">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">项目级别</label>
+        <div class="layui-input-block">
+            <select name="itemLevel" lay-filter="itemLevel" class="itemLevel" id="itemLevel" lay-search=""></select>
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">合同编号</label>
+        <div class="layui-input-block">
+            <input type="text" class="layui-input contractNumber" lay-verify="required" placeholder="请输入合同编号">
+        </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">搜索成员</label>
+        <div class="layui-input-block">
+            <!--加上lay-search属性，可以实现layui的select组件自带搜索功能-->
+            <select name="searchTeacher" lay-search="" lay-filter="searchTeacher" class="searchTeacher" id="searchTeacher"></select>
+        </div>
+        <div class="layui-inline layui-word-aux">输入教师关键信息:【姓名或所属部门】选中帮助您快速选择成员</div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">已选成员</label>
+        <div class="layui-input-block itemMember" id="itemMember"></div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">起始时间</label>
+        <div class="layui-input-block">
+            <input type="text" name="startTime" id="startTime" lay-verify="required" placeholder="请选择项目起始时间" class="layui-input startTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-inline">
+        <label class="layui-form-label">结束时间</label>
+        <div class="layui-input-block">
+            <input type="text" name="endTime" id="endTime" lay-verify="required" placeholder="请选择项目结束时间" class="layui-input endTime">
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="addUser" id="addUser" value="确定" />
+    </div>
+</form>
+<script src="/teacher_files_war/static/layui/layui.js"></script>
+<script type="text/javascript" src="item-add.js"></script>
+</body>
+</html>

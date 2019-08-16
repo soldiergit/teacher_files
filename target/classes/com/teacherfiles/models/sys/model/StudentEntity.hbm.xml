@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.StudentEntity" table="student" schema="teacher_files">
+        <id name="studentId">
+            <column name="student_id" sql-type="int(11)"/>
+        </id>
+        <property name="studentCode">
+            <column name="student_code" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="studentName">
+            <column name="student_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="studentPhone">
+            <column name="student_phone" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="studentEmail">
+            <column name="student_email" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="major">
+            <column name="major" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="className">
+            <column name="class_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="jobContent">
+            <column name="job_content" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="isPerson">
+            <column name="is_person" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="itemId">
+            <column name="item_id" sql-type="int(11)" not-null="true"/>
+        </property>
+        <property name="itemName">
+            <column name="item_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <!--<many-to-one name="raceItem" class="com.teacherfiles.models.sys.model.CompetitionEntity"/>-->
+    </class>
+</hibernate-mapping>
