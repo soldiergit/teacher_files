@@ -119,7 +119,8 @@ layui.use(['form','layer','upload','laydate'],function(){
     //上传头像
     var uploadInst = upload.render({
         elem: '#imgUpload',
-        url: '/teacher_files_war/upload_uploadTeacherImg.action',
+        // url: '/teacher_files_war/upload_uploadTeacherImg.action',
+        url: '/teacher_files_war/upload_uploadImage.action',
         acceptMime: 'image/*',  //只显示图片文件
         size: 100,
         auto: false,
@@ -129,7 +130,6 @@ layui.use(['form','layer','upload','laydate'],function(){
             layer.load(); //上传loading
             //预读本地文件示例，不支持ie8
             obj.preview(function(index, file, result){
-                console.log(file);//里面的名称是选中时文件的名称
                 $('#imgPreview').attr('src', result); //图片链接（base64）
             });
         },

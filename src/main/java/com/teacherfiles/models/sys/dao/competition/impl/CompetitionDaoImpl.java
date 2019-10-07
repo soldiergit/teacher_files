@@ -190,9 +190,8 @@ public class CompetitionDaoImpl implements CompetitionDao {
                 }
             } else if ("2".equals(thisKey[0])) {
                 try {
-                    Integer newKey = Integer.valueOf(thisKey[1]);
                     criteria.createAlias("teacher", "teacher").
-                            add(Restrictions.eq("teacher.unitIds", newKey+""));
+                            add(Restrictions.like("teacher.unitIds", thisKey[1], MatchMode.ANYWHERE));
                 } catch (Exception e) {
                     System.out.println("2，key:"+key+",不能转换为数字！");
                 }
@@ -223,8 +222,9 @@ public class CompetitionDaoImpl implements CompetitionDao {
                             .setMaxResults(pageBean.getPageSize()).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list());
         }
 
-        pageBean.setTotal(Math.toIntExact((Long) session.createCriteria(CompetitionEntity.class).add(Restrictions.eq("deptId", deptId))
-                .setProjection(Projections.rowCount()).uniqueResult()));
+//        pageBean.setTotal(Math.toIntExact((Long) session.createCriteria(CompetitionEntity.class).add(Restrictions.eq("deptId", deptId))
+//                .setProjection(Projections.rowCount()).uniqueResult()));
+        pageBean.setTotal(Math.toIntExact((Long) criteria.setProjection(Projections.rowCount()).uniqueResult()));
 
         session.close();
 

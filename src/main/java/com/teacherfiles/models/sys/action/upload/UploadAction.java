@@ -1,7 +1,9 @@
 package com.teacherfiles.models.sys.action.upload;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.teacherfiles.common.config.ConfigApi;
 import com.teacherfiles.common.vo.R;
+import com.teacherfiles.utils.RandomUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
@@ -30,6 +32,66 @@ public class UploadAction extends ActionSupport {
     private static Logger logger = Logger.getLogger(UploadAction.class);
     //返回集
     private R r = new R();
+
+    /**
+     * 上传附件--论文、赛事附件等...
+     */
+    public String uploadAnnex() {
+        //等于 /teacher_files_war
+        String projectName = ServletActionContext.getServletContext().getContextPath();
+        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/" + RandomUtils.getRandomNums() + "/";
+
+        // 获取原文件图片后缀，以最后的.作为截取(.excel)
+        String extName = fileFileName.substring(fileFileName.lastIndexOf("."));
+
+        //  文件保存路径
+        try {
+            saveFile(UPLOAD_FILES_PATH);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ERROR;
+        }
+
+        //返回前台路径，用于保存到数据库
+        r = R.ok()
+                .put("src", UPLOAD_FILES_PATH+fileFileName)
+                .put("fileName", fileFileName)
+                .put("fileType", extName);
+
+        logger.info("上传附件："+r);
+
+        return SUCCESS;
+    }
+
+    /**
+     * 上传图片--获奖图片、教师图片等...
+     */
+    public String uploadImage() {
+        String projectName = ServletActionContext.getServletContext().getContextPath();
+        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/" + RandomUtils.getRandomNums() + "/";
+
+        //  文件保存路径
+        try {
+            saveFile(UPLOAD_FILES_PATH);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ERROR;
+        }
+
+        //返回前台路径，用于保存到数据库
+        r = R.ok().put("src", "/tomcat_annex"+projectName + "/"+ RandomUtils.getRandomNums() + "/"+fileFileName);
+
+        logger.info("上传图片："+r);
+
+        return SUCCESS;
+    }
+
+    private void saveFile(String path) throws IOException {
+        //  文件保存路径
+        File fileFolder = new File(path);
+        if(!fileFolder.exists()) fileFolder.mkdirs();
+        FileUtils.copyFile(file, new File(fileFolder, fileFileName));
+    }
 
     /**
      *上传教师个人图片
@@ -70,8 +132,10 @@ public class UploadAction extends ActionSupport {
      */
     public String uploadPrizeImg() {
 
-        String realPath = ServletActionContext.getServletContext().getRealPath("/upload/prizeImg");
-        String projectPath = ServletActionContext.getServletContext().getContextPath();//等于 /teacher_files_war
+//        String realPath = ServletActionContext.getServletContext().getRealPath("/upload/prizeImg");
+        String projectName = ServletActionContext.getServletContext().getContextPath();//等于 /teacher_files_war
+        String filename = fileFileName.substring(0, fileFileName.lastIndexOf("."));
+        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/"+ filename + "/";
 
         // 获取原文件图片后缀，以最后的.作为截取(.jpg)
         String extName = fileFileName.substring(fileFileName.lastIndexOf("."));
@@ -80,7 +144,8 @@ public class UploadAction extends ActionSupport {
         String uuid = UUID.randomUUID().toString();
 
         //  文件保存路径
-        File fileFolder = new File(realPath);
+//        File fileFolder = new File(realPath);
+        File fileFolder = new File(UPLOAD_FILES_PATH);
         if(!fileFolder.exists()) fileFolder.mkdirs();
 
         try {
@@ -92,7 +157,8 @@ public class UploadAction extends ActionSupport {
         }
 
         //返回前台路径，用于保存到数据库
-        r = R.ok().put("src", projectPath+"/upload/prizeImg/"+fileFileName);
+//        r = R.ok().put("src", projectPath+"/upload/prizeImg/"+fileFileName);
+        r = R.ok().put("src", "/tomcat_annex"+projectName + "/"+ filename + "/"+fileFileName);
 
         logger.info("上传获奖图片："+r);
 

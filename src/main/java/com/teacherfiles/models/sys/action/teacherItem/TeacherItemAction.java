@@ -4,12 +4,10 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.teacherfiles.common.vo.PageBean;
 import com.teacherfiles.common.vo.R;
-import com.teacherfiles.models.sys.model.TeacherItemCategoryEntity;
-import com.teacherfiles.models.sys.model.TeacherItemEntity;
-import com.teacherfiles.models.sys.model.TeacherEntity;
-import com.teacherfiles.models.sys.model.TeacherItemLevelEntity;
+import com.teacherfiles.models.sys.model.*;
 import com.teacherfiles.models.sys.service.teacherItem.TeacherItemService;
 import com.teacherfiles.models.sys.service.teacher.TeacherService;
+import com.teacherfiles.models.sys.service.teacherItemAnnex.TeacherItemAnnexService;
 import com.teacherfiles.models.sys.service.teacherItemCategory.TeacherItemCategoryService;
 import com.teacherfiles.models.sys.service.teacherItemLevel.TeacherItemLevelService;
 import com.teacherfiles.utils.DateUtil;
@@ -30,6 +28,8 @@ public class TeacherItemAction extends ActionSupport implements ModelDriven<Teac
 
     @Autowired
     private TeacherItemService teacherItemService;
+    @Autowired
+    private TeacherItemAnnexService itemAnnexService;
     @Autowired
     private TeacherItemCategoryService itemCategoryService;
     @Autowired
@@ -70,6 +70,12 @@ public class TeacherItemAction extends ActionSupport implements ModelDriven<Teac
     private Integer deptId;
     //导出标识 1-系统管理员导出整个表 2-部门领导和部门负责人导出本学院全部 3-教师个人导出全部 4-根据id导出
     private Integer exportCode;
+    //教师项附件路径--可能是多个pdf或图片
+    private String manyFilePath;
+    //教师项目附件原名称
+    private String manyFileName;
+    //教师项目附件类型（后缀）
+    private String manyFileType;
 
     @Override
     public TeacherItemEntity getModel() {
@@ -104,6 +110,22 @@ public class TeacherItemAction extends ActionSupport implements ModelDriven<Teac
         teacherItemEntity.setItemPerson(teacher_result);
 
         teacherItemService.save(teacherItemEntity);
+
+        //教师项目附件
+        if (manyFileName != null && !"".equals(manyFileName)) {
+            TeacherItemAnnexEntity teacherItemAnnexEntity;
+            String[] filePath = manyFilePath.split(",");
+            String[] fileName = manyFileName.split(",");
+            String[] fileType = manyFileType.split(",");
+            for (int i=0; i<fileName.length; i++) {
+                teacherItemAnnexEntity = new TeacherItemAnnexEntity();
+                teacherItemAnnexEntity.setFilePath(filePath[i]);  //文件现在的路径
+                teacherItemAnnexEntity.setFileName(fileName[i]);  //文件原来的名称
+                teacherItemAnnexEntity.setFileType(fileType[i]);  //文件后缀，如: .pdf .jpg
+                teacherItemAnnexEntity.setItemId(teacherItemEntity.getItemId());  //2、获取教师项目id
+                itemAnnexService.save(teacherItemAnnexEntity);   //3、再保存附件
+            }
+        }
 
         r = R.ok();
 
@@ -146,6 +168,22 @@ public class TeacherItemAction extends ActionSupport implements ModelDriven<Teac
         teacher_result.setTeacherId(itemPersonId);
         teacher_result = teacherService.findById(teacher_result);
         teacherItemEntity.setItemPerson(teacher_result);
+
+        //用户重新上传的附件
+        if (manyFileName != null && !"".equals(manyFileName)) {
+            TeacherItemAnnexEntity teacherItemAnnexEntity;
+            String[] filePath = manyFilePath.split(",");
+            String[] fileName = manyFileName.split(",");
+            String[] fileType = manyFileType.split(",");
+            for (int i=0; i<fileName.length; i++) {
+                teacherItemAnnexEntity = new TeacherItemAnnexEntity();
+                teacherItemAnnexEntity.setFilePath(filePath[i]);  //文件现在的路径
+                teacherItemAnnexEntity.setFileName(fileName[i]);  //文件原来的名称
+                teacherItemAnnexEntity.setFileType(fileType[i]);  //文件后缀，如: .pdf .jpg
+                teacherItemAnnexEntity.setItemId(teacherItemEntity.getItemId());  //2、获取教师项目id
+                itemAnnexService.save(teacherItemAnnexEntity);   //3、再保存附件
+            }
+        }
 
         teacherItemService.update(teacherItemEntity);
 
@@ -404,5 +442,29 @@ public class TeacherItemAction extends ActionSupport implements ModelDriven<Teac
 
     public void setExportCode(Integer exportCode) {
         this.exportCode = exportCode;
+    }
+
+    public String getManyFilePath() {
+        return manyFilePath;
+    }
+
+    public void setManyFilePath(String manyFilePath) {
+        this.manyFilePath = manyFilePath;
+    }
+
+    public String getManyFileName() {
+        return manyFileName;
+    }
+
+    public void setManyFileName(String manyFileName) {
+        this.manyFileName = manyFileName;
+    }
+
+    public String getManyFileType() {
+        return manyFileType;
+    }
+
+    public void setManyFileType(String manyFileType) {
+        this.manyFileType = manyFileType;
     }
 }

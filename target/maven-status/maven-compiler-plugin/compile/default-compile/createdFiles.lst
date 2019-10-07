@@ -19,6 +19,7 @@ com/teacherfiles/models/sys/model/SysMenuEntity.class
 com/teacherfiles/models/sys/dao/teacherItem/impl/TeacherItemDaoImpl.class
 com/teacherfiles/models/sys/model/MatchEntity.class
 com/teacherfiles/models/sys/service/sysrole/impl/SysRoleServiceImpl.class
+com/teacherfiles/utils/RandomUtils.class
 com/teacherfiles/models/sys/action/academicPaper/AcademicPaperAction.class
 com/teacherfiles/models/sys/dao/sysuser/impl/UserDaoImpl.class
 com/teacherfiles/models/sys/service/sysuser/SysUserService.class
@@ -55,6 +56,7 @@ com/teacherfiles/models/sys/service/teacherItemLevel/TeacherItemLevelService.cla
 com/teacherfiles/models/sys/dao/competition/CompetitionDao.class
 com/teacherfiles/models/sys/action/competitionPrizeLevel/CompetitionPrizeLevelAction.class
 com/teacherfiles/models/sys/action/competitionPrizeGrade/CompetitionPrizeGradeAction.class
+com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.class
 com/teacherfiles/models/sys/service/competition/impl/CompetitionServiceImpl.class
 com/teacherfiles/models/sys/dao/competitionPrizeGrade/impl/CompetitionPrizeGradeDaoImpl.class
 com/teacherfiles/models/sys/service/competitionPrizeLevel/impl/CompetitionPrizeLevelServiceImpl.class
@@ -82,6 +84,7 @@ com/teacherfiles/models/sys/dao/teacherItemLevel/TeacherItemLevelDao.class
 com/teacherfiles/models/sys/dao/match/MatchDao.class
 com/teacherfiles/models/sys/service/competition/CompetitionService.class
 com/teacherfiles/models/sys/service/sysmenuChildren/MenuChildrenService.class
+com/teacherfiles/models/sys/action/teacherItemAnnex/TeacherItemAnnexAction.class
 com/teacherfiles/models/sys/model/SysMenuChildrenEntity.class
 com/teacherfiles/models/sys/service/teacher/impl/TeacherServiceImpl.class
 com/teacherfiles/models/sys/dao/competitionPrizeLevel/impl/CompetitionPrizeLevelDaoImpl.class
@@ -113,12 +116,16 @@ com/teacherfiles/models/sys/dao/competitionPrizeLevel/CompetitionPrizeLevelDao.c
 com/teacherfiles/utils/DateUtil.class
 com/teacherfiles/models/sys/action/academicPaperAnnex/AcademicPaperAnnexAction.class
 com/teacherfiles/models/sys/service/sysuser/impl/SysUserServiceImpl.class
+com/teacherfiles/models/sys/service/teacherItemAnnex/TeacherItemAnnexService.class
 com/teacherfiles/models/sys/service/sysmenu/MenuService.class
 com/teacherfiles/models/sys/service/sysrole/SysRoleService.class
-com/teacherfiles/common/TestHttpClientSendWarnMsgDemo.class
+com/teacherfiles/models/sys/dao/teacherItemAnnex/TeacherItemAnnexDao.class
 com/teacherfiles/models/sys/dao/teacherItemLevel/impl/TeacherItemLevelDaoImpl.class
 com/teacherfiles/models/sys/dao/sysmenu/impl/MenuDaoImpl.class
+com/teacherfiles/models/sys/dao/teacherItemAnnex/impl/TeacherItemAnnexDaoImpl.class
 com/teacherfiles/models/sys/dao/sysmenuChildren/impl/MenuChildrenDaoImpl.class
 com/teacherfiles/models/sys/service/teacherItem/impl/TeacherItemServiceImpl.class
+com/teacherfiles/models/sys/service/teacherItemAnnex/impl/TeacherItemAnnexServiceImpl.class
 com/teacherfiles/models/sys/service/competitionPrizeGrade/CompetitionPrizeGradeService.class
+com/teacherfiles/common/config/ConfigApi.class
 com/teacherfiles/models/sys/action/teacherItemCategory/TeacherItemCategoryAction.class

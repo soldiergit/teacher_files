@@ -7,4 +7,19 @@ layui.use(['element', 'form', 'table', 'layer', 'laytpl', 'util'], function () {
         table = layui.table,
         util = layui.util;
 
+    // 附件下载
+    $("#getAnnex").click(function(){
+        // var path =  '/home/soldier/SOLDIER'+$('#imgPreview').attr('src');
+        var path =  $('#imgPreview').attr('src');
+        var filename = '《'+ $('.itemName').val() +'》'+ $('.matchName').val() + '获奖图片.png';
+        $.ajax({
+            type: "POST",
+            url: '/teacher_files_war/download/download_downloadFile.action',//数据接口
+            data: {
+                downloadPath: path,
+                filename: filename
+            }
+        });
+    });
+
 });

@@ -1,9 +1,10 @@
-layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
+layui.use(['form', 'layer', 'table', 'laytpl', 'util', 'laydate'], function () {
     var form = layui.form,
         layer = parent.layer === undefined ? layui.layer : top.layer,
         $ = layui.jquery,
         laytpl = layui.laytpl,
         util = layui.util,
+        laydate = layui.laydate,
         table = layui.table;
 
     var deptId = window.sessionStorage.getItem("deptId");
@@ -63,9 +64,7 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
                 page: {
                     curr: 1 //重新从第 1 页开始
                 },
-                where: {
-                    key: dataReload.val()
-                }
+                where: {key: "0,"+dataReload.val()}
             }, 'data');
         }
     };
@@ -260,5 +259,54 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
         $(window).on("resize",function(){
             layui.layer.full(window.sessionStorage.getItem("index"));
         })
+    }
+
+    /**
+     * 0:根据名称等String类型查询
+     * 1：年度
+     * 2：论文等级--paper_grade_id外键
+     * 3：论文类型--paperType论文类型：科研、教改
+     * 4：根据指导老师所属教研室--teacher.unitIds
+     */
+
+    //执行一个laydate实例
+    laydate.render({elem: '#queryTime' , type: 'year', done: function(value, date, endDate){//控件选择完毕后的回调
+            table.reload('infoListTable', {
+                page: {
+                    curr: 1 //重新从第 1 页开始
+                },
+                where: {key: "1,"+value}
+            }, 'data');
+        }});
+    $.post("/teacher_files_war/biz/paperGrade_findAll.action", function (data) {//--论文等级
+        $('#paperGrade').append(new Option("请选择", ""));
+        $.each(data.data, function (index, item) {
+            $('#paperGrade').append(new Option(item.title, "2,"+item.id));
+        });
+        //重新渲染select
+        form.render('select');
+    });
+    $.post("/teacher_files_war/biz/dept_findSubordinate.action?deptId="+deptId, function (data) {//--所属教研室
+        $('#unitId').append(new Option("请选择", ""));
+        $.each(data.data, function (index, item) {
+            $('#unitId').append(new Option(item.deptName, "4,"+item.deptId));
+        });
+        //重新渲染select
+        form.render('select');
+    });
+
+    //当用户选中所属部门时，重载表格  -- unitId:lay-filter绑定的名称
+    form.on("select(paperGrade)", function (data) {reloadTable(data)});
+    form.on("select(paperType)", function (data) {reloadTable(data)});
+    form.on("select(unitId)", function (data) {reloadTable(data)});
+    function reloadTable(data) {
+        var key = data.value=="" ? null : data.value;
+        //执行重载
+        table.reload('infoListTable', {
+            page: {
+                curr: 1 //重新从第 1 页开始
+            },
+            where: {key: key}
+        }, 'data');
     }
 });

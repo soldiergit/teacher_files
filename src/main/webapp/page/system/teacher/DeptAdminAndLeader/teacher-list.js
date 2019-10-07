@@ -187,7 +187,7 @@ layui.use(['form','layer','table','laytpl','util'],function(){
                 body.find(".teacherBirth").val(util.toDateString(data.teacherBirth, "yyyy年MM月dd日"));
                 body.find(".entryTime").val(util.toDateString(data.entryTime, "yyyy年MM月dd日"));
                 body.find(".teacherImg").val(data.teacherImg);
-                body.find(".imgPreview").attr('src', data.teacherImg);//图片显示
+                body.find("#imgPreview").attr('src', data.teacherImg);//图片显示
                 body.find(".highEdu").val(data.highEdu);
                 body.find(".firstEdu").val(data.firstEdu);
                 body.find(".technicalPost").val(data.technicalPost);

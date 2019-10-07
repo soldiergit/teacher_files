@@ -106,7 +106,8 @@ layui.use(['form','layer','upload','laydate','util'],function(){
     //上传头像
     var uploadInst = upload.render({
         elem: '#imgUpload',
-        url: '/teacher_files_war/upload_uploadTeacherImg.action',
+        // url: '/teacher_files_war/upload_uploadTeacherImg.action',
+        url: '/teacher_files_war/upload_uploadImage.action',
         size: 100,
         acceptMime: 'image/*',  //只显示图片文件
         auto: false,

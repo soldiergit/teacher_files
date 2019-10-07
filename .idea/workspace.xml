@@ -6,10 +6,86 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html" line="71" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html" line="72" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e60d275a-7a2d-49d7-99cd-49ed793fd347" name="Default Changelist" comment="" />
+    <list default="true" id="e60d275a-7a2d-49d7-99cd-49ed793fd347" name="Default Changelist" comment="repair BUG">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/common/config/ConfigApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/utils/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/common/TestHttpClientSendWarnMsgDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/download/DownLoadAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/download/DownLoadAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/upload/UploadAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/upload/UploadAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/struts-biz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/struts-biz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-awardee-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-awardee-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-guide-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-guide-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/DeptAdminAndLeader/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/DeptAdminAndLeader/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/user/password.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/user/password.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/user/user-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/user/user-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/layui/css/modules/layim/html/chatlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/lib/echarts/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/lib/echarts/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teacherfiles/common/TestHttpClientSendWarnMsgDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/action/download/DownLoadAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/action/download/DownLoadAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/action/upload/UploadAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/action/upload/UploadAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/common/TestHttpClientSendWarnMsgDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/action/download/DownLoadAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/action/download/DownLoadAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/action/upload/UploadAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/action/upload/UploadAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/common/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/DeptAdminAndLeader/paper-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/DeptAdminAndLeader/paper-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/DeptAdminAndLeader/paper-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/DeptAdminAndLeader/paper-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/my-paper-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/my-paper-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/my-paper-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/my-paper-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/paper-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/paper-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/paper-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/academicPaper/paper-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/competition/competition-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/competition/my-awardee-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/competition/my-awardee-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/competition/my-guide-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/competition/my-guide-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/systemBasicData/match/match-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/systemBasicData/match/match-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/DeptAdminAndLeader/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/DeptAdminAndLeader/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacher/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/system/teacherRole/teacher-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/system/teacherRole/teacher-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/user/password.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/user/password.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/page/user/user-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/page/user/user-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/static/layui/css/modules/layim/html/chatlog.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/static/layui/css/modules/layim/html/chatlog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/teacher_files/static/lib/echarts/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/teacher_files/static/lib/echarts/echarts.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,54 +123,171 @@
     </expand>
     <select />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/match/MatchAction.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-560">
+                    <caret line="124" column="47" lean-forward="true" selection-start-line="124" selection-start-column="47" selection-end-line="140" selection-end-column="9" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="464">
+                    <caret line="113" column="70" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="70" />
+                    <folding>
+                      <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-161">
+                    <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="55" selection-end-column="57" />
+                    <folding>
+                      <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="520">
+                    <caret line="235" column="74" lean-forward="true" selection-start-line="235" selection-start-column="74" selection-end-line="251" selection-end-column="24" />
+                    <folding>
+                      <element signature="e#6432#8846#0" />
+                      <element signature="e#10539#11451#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-detail.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="543">
+                    <caret line="99" column="10" lean-forward="true" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/struts-biz.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItemAnnex/TeacherItemAnnexAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="104" column="89" selection-start-line="104" selection-start-column="89" selection-end-line="104" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+                <element signature="e#1412#1413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-285">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+            <state relative-caret-position="298">
+              <caret line="85" column="57" lean-forward="true" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/common/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1349">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="445">
+              <caret line="393" column="48" selection-start-line="393" selection-start-column="40" selection-end-line="393" selection-end-column="48" />
+              <folding>
+                <element signature="e#5384#8776#0" />
+                <element signature="e#8829#11685#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="208">
+              <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/common/welcome.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2812">
-              <caret line="148" column="85" selection-start-line="148" selection-start-column="85" selection-end-line="148" selection-end-column="85" />
+            <state relative-caret-position="493">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="-1274">
+              <caret line="173" column="58" selection-start-line="173" selection-start-column="58" selection-end-line="173" selection-end-column="58" />
+              <folding>
+                <element signature="e#11190#11191#0" expanded="true" />
+                <element signature="e#11234#11235#0" expanded="true" />
+                <element signature="e#11273#11274#0" expanded="true" />
+                <element signature="e#11308#11309#0" expanded="true" />
+                <element signature="e#11364#11365#0" expanded="true" />
+                <element signature="e#11412#11413#0" expanded="true" />
+                <element signature="e#11451#11452#0" expanded="true" />
+                <element signature="e#11486#11487#0" expanded="true" />
+                <element signature="e#11542#11543#0" expanded="true" />
+                <element signature="e#11590#11591#0" expanded="true" />
+                <element signature="e#11629#11630#0" expanded="true" />
+                <element signature="e#11664#11665#0" expanded="true" />
+                <element signature="e#11720#11721#0" expanded="true" />
+                <element signature="e#11768#11769#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,44 +307,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>for ( var i = 0; i &lt;arr.length; i++)</find>
-      <find>form.render('redio'</find>
-      <find>所属教研室</find>
-      <find>personName</find>
-      <find>try</find>
-      <find>项目类型</find>
-      <find>teacher_findAll</find>
-      <find>deptId</find>
-      <find>itemType</find>
-      <find>var unitId = [];</find>
-      <find>//所属部门</find>
-      <find>teacher-add.html</find>
-      <find>.prop(&quot;disabled&quot;, true)</find>
-      <find>prizeGrade</find>
-      <find>prizeLevel</find>
-      <find>match_find</find>
-      <find>prizeGrade_find</find>
-      <find>prizeLevel_find</find>
-      <find>manyFile</find>
-      <find>&lt;!--&lt;meta charset=&quot;utf-8&quot;&gt;--&gt;</find>
-      <find>&lt;meta charset=&quot;utf-8&quot;&gt;</find>
-      <find>utf-8</find>
-      <find>charset=&quot;utf-8&quot;&gt;</find>
-      <find>charset=&quot;utf-8&quot;&gt;&lt;/</find>
-      <find>charset=&quot;utf-8&quot;&gt;&lt;</find>
-      <find>charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</find>
-      <find>&gt;&lt;/script&gt;</find>
-      <find>charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</find>
-      <find>&lt;meta charset=&quot;GBK&quot;&gt;</find>
-      <find>charset=&quot;utf-8&quot;</find>
+      <find>index</find>
+      <find>laydate</find>
+      <find>type: 'year'</find>
+      <find>infoListTable</find>
+      <find>/控件选择完毕后的回调</find>
+      <find>findByDept</find>
+      <find>/teacher_files_war/upload_</find>
+      <find>fileUpload</find>
+      <find>uploadFile</find>
+      <find>/teacher_files_war/upload</find>
+      <find>4：根据获奖级别查询--prizeLevel</find>
+      <find>论文等级</find>
+      <find>论文类型</find>
+      <find>teacherName</find>
+      <find>paper_findByDept</find>
+      <find>dataReload.</find>
+      <find>&quot;0,&quot;+</find>
+      <find>teacher</find>
+      <find>console.log</find>
+      <find>console.lo</find>
+      <find>unitId</find>
+      <find>sys_match_annex</find>
+      <find>Match</find>
+      <find>manyFilePath</find>
+      <find>testList</find>
+      <find>manyFileName</find>
+      <find>findByPaperId</find>
+      <find>paperId</find>
+      <find>paperAnnex</find>
+      <find>matchAnnexId</find>
     </findStrings>
     <replaceStrings>
-      <replace>TeacherItemCategory</replace>
-      <replace>teacherItemCategoryDao</replace>
-      <replace>competitionPrizeLevelDao</replace>
-      <replace>competitionPrizeGradeDao</replace>
-      <replace>academicPaperGradeService</replace>
-      <replace>competitionPrizeGradeService</replace>
       <replace>c</replace>
       <replace>teacherItemCategoryService</replace>
       <replace>teacherItemLevelService</replace>
@@ -176,6 +363,12 @@
       <replace>&gt;&lt;/script&gt;</replace>
       <replace>&lt;meta charset=&quot;utf-8&quot;&gt;</replace>
       <replace>charset=&quot;GBK&quot;</replace>
+      <replace>teacher_item_annex</replace>
+      <replace>TeacherItem</replace>
+      <replace>findByTeacherItemId</replace>
+      <replace>itemId</replace>
+      <replace>teacherItemAnnex</replace>
+      <replace>itemAnnexId</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/webapp/static/layui/lay/modules</dir>
@@ -192,57 +385,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-join-list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-join-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-list.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherEntity.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/dept/DeptAdminAndLeader/dept-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/dept/DeptAdminAndLeader/dept-add.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/dept/DeptDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/dept/impl/DeptDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/dept/DeptService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/dept/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/dept/DeptAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/user/user-info.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/my-info.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/my-info.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-detail.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-detail.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/DeptAdminAndLeader/teacher-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader/edit-role.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/teacher-list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/edit-role.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/DeptAdminAndLeader/item-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/DeptAdminAndLeader/item-list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacher/TeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacher/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacher/impl/TeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacher/impl/TeacherDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/user/user-info.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-add.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacher/TeacherAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-add.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-list.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItem/impl/TeacherItemDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/CompetitionEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/common/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-awardee-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/DeptAdminAndLeader/teacher-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/teacher-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader/teacher-list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/utils/RandomUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/common/config/ConfigApi.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/my-guide-list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/download/DownLoadAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/upload/UploadAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/user/user-info.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/lib/echarts/echarts.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/layui_exts/excel.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/user/password.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/layui/css/modules/layim/html/chatlog.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeaAnnexEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/struts-biz.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/MatchAnnexDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/TeacherItemAnnexDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/impl/MatchAnnexDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/impl/TeacherItemAnnexDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/MatchAnnexService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/TeacherItemAnnexService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/impl/MatchAnnexServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/impl/TeacherItemAnnexServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItemAnnex/TeacherItemAnnexAction.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-detail.html" />
       </list>
     </option>
   </component>
@@ -285,10 +478,10 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
     <option name="y" value="27" />
-    <option name="width" value="960" />
+    <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -297,6 +490,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,14 +502,86 @@
             <path>
               <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
               <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="teacherfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="teacherfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="academicPaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teacher_files" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teacher_files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="teacherItem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,9 +589,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565830685442" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570434399383" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LearningNotes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../egoStudyDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -334,26 +601,26 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.teacherfiles.models.sys.action.teacherItemAnnex" />
+      <recent name="com.teacherfiles.models.sys.model" />
+      <recent name="com.teacherfiles.models.sys.action.teacherItemLevel" />
+      <recent name="com.teacherfiles.models.sys.action.teacherItemCategory" />
+      <recent name="com.teacherfiles.models.sys.action.competitionPrizeLevel" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/page/system/teacher/DeptAdminAndLeader" />
       <recent name="$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData" />
       <recent name="$PROJECT_DIR$/src/main/webapp/page/system/competition/old" />
       <recent name="$PROJECT_DIR$/src/main/webapp/upload/teacherImg" />
       <recent name="$PROJECT_DIR$/src/main/webapp/page/system/academicPaper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.teacherfiles.models.sys.action.teacherItemLevel" />
-      <recent name="com.teacherfiles.models.sys.action.teacherItemCategory" />
-      <recent name="com.teacherfiles.models.sys.action.competitionPrizeLevel" />
-      <recent name="com.teacherfiles.models.sys.action.competitionPrizeGrade" />
-      <recent name="com.teacherfiles.models.sys.action.academicPaperGrade" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/db" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/DeptAdminAndLeader" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/page/system/dept/DeptAdminAndLeader" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/page/system/competition" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -569,13 +836,17 @@
       <workItem from="1565778955443" duration="4239000" />
       <workItem from="1565821630194" duration="4264000" />
       <workItem from="1565827337168" duration="1242000" />
-    </task>
-    <task id="LOCAL-00053" summary="完善部分内容，还差报表">
-      <created>1563249764872</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1563249764875</updated>
+      <workItem from="1565940241750" duration="4013000" />
+      <workItem from="1565947092633" duration="768000" />
+      <workItem from="1565952844587" duration="14000" />
+      <workItem from="1566526300012" duration="94000" />
+      <workItem from="1567736204404" duration="147000" />
+      <workItem from="1567824038676" duration="117000" />
+      <workItem from="1570327567592" duration="1528000" />
+      <workItem from="1570333645586" duration="35000" />
+      <workItem from="1570359045692" duration="3545000" />
+      <workItem from="1570362611473" duration="5864000" />
+      <workItem from="1570414613475" duration="18487000" />
     </task>
     <task id="LOCAL-00054" summary=":wq">
       <created>1563268777202</created>
@@ -913,11 +1184,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565825444451</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="commit little modify">
+      <created>1565941668315</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1565941668319</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="814682000" />
+    <option name="totallyTimeSpent" value="849294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,9 +1207,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="1920" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49602544" visible="true" weight="0.14737406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49602544" visible="true" weight="0.20525187" />
       <window_info id="Structure" order="1" sideWeight="0.50397456" side_tool="true" weight="0.20578778" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -941,26 +1220,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32963374" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.31520534" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49732047" weight="0.69256383" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.4472808" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49732047" visible="true" weight="0.3107658" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286638" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.33740288" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4994641" weight="0.43063262" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32852387" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33810574" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026795" side_tool="true" weight="0.69256383" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Debug" order="16" weight="0.39511654" />
+      <window_info anchor="bottom" id="Debug" order="16" weight="0.46836847" />
       <window_info anchor="right" id="Preview" order="0" weight="0.32959402" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.18381564" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.11146838" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.1881029" />
@@ -972,8 +1251,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="多文件上传" />
-    <MESSAGE value="完成教师详情" />
     <MESSAGE value="完成论文、赛事的附件表" />
     <MESSAGE value="超级管理员只能查看--ben" />
     <MESSAGE value="完成查询" />
@@ -997,7 +1274,9 @@
     <MESSAGE value="完成角色菜单分类" />
     <MESSAGE value="完成部门管理员管理，及下拉框模糊查询" />
     <MESSAGE value="完善bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善bug" />
+    <MESSAGE value="commit little modify" />
+    <MESSAGE value="repair BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="repair BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1009,178 +1288,70 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/upload/UploadAction.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/download/DownLoadAction.java</url>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="91" />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.java</url>
+          <line>192</line>
+          <properties />
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-list.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.1.21/ognl-3.1.21.jar!/ognl/OgnlRuntime.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="149">
+          <caret line="472" selection-start-line="472" selection-end-line="472" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-list.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/my-awardee-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="423">
+          <caret line="245" column="28" selection-start-line="245" selection-start-column="28" selection-end-line="245" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/dept/impl/DeptDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/download/DownLoadAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="130" column="37" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="37" />
+        <state relative-caret-position="228">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/dept/DeptAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="405">
+          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-list.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/my-guide-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+        <state relative-caret-position="42">
+          <caret line="288" column="47" lean-forward="true" selection-start-line="288" selection-start-column="47" selection-end-line="288" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="75" column="102" selection-start-line="75" selection-start-column="83" selection-end-line="75" selection-end-column="102" />
           <folding>
-            <element signature="e#3776#4598#0" />
-            <element signature="e#4640#7034#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/edit-role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacher/TeacherAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="78" column="89" selection-start-line="78" selection-start-column="89" selection-end-line="78" selection-end-column="89" />
-          <folding>
-            <element signature="e#317#1393#0" />
-            <element signature="e#1427#1775#0" />
-            <element signature="e#1836#1937#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherRole/deptadmin-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItem/TeacherItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItem/impl/TeacherItemDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="189" column="21" lean-forward="true" selection-start-line="189" selection-start-column="21" selection-end-line="191" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="157" column="7" lean-forward="true" selection-start-line="157" selection-start-column="7" selection-end-line="162" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/DeptAdminAndLeader/item-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/DeptAdminAndLeader/item-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="389" column="71" lean-forward="true" selection-start-line="389" selection-start-column="71" selection-end-line="400" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/CompetitionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="352" column="30" lean-forward="true" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
-          <folding>
-            <element signature="e#10202#12055#0" />
-            <element signature="e#12100#13580#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="129" column="16" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="16" />
+        <state relative-caret-position="155">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -1188,142 +1359,380 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/systemBasicData/match/match-add.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacher/teacher-add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="77" column="52" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="52" />
+        <state relative-caret-position="164">
+          <caret line="122" column="60" lean-forward="true" selection-start-line="122" selection-start-column="60" selection-end-line="123" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/teacher_files.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-list.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/dept/dept-list.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacher/my-info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/dept/dept-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/dept/dept-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/dept/DeptAdminAndLeader/dept-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/dept/DeptAdminAndLeader/dept-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="327">
+          <caret line="83" column="55" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-resource.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-hibernate.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-action.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/login.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/academicPaper/AcademicPaperAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/cache.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/bodyTab.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1083" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/address.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="-2004">
+          <caret line="79" column="123" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="123" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/filterChainDefinitions-explain.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/welcome.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/common/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui/layui.all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="1" column="2519" selection-start-line="1" selection-start-column="2519" selection-end-line="1" selection-end-column="2519" />
+        <state relative-caret-position="144">
+          <caret line="21" column="102" lean-forward="true" selection-start-line="21" selection-start-column="102" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        <state relative-caret-position="437">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/common/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/DeptAdminAndLeader/competition-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="960">
+          <caret line="356" column="68" lean-forward="true" selection-start-line="356" selection-start-column="68" selection-end-line="357" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/user-info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="1057">
+          <caret line="111" column="18" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/common/welcome.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2812">
-          <caret line="148" column="85" selection-start-line="148" selection-start-column="85" selection-end-line="148" selection-end-column="85" />
+        <state relative-caret-position="589">
+          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/AcademicPaperEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="456">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/academicPaper/impl/AcademicPaperServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="302" column="25" selection-start-line="302" selection-start-column="25" selection-end-line="302" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/layui_exts/excel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="278398" lean-forward="true" selection-start-line="1" selection-start-column="278398" selection-end-line="1" selection-end-column="278441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/lib/echarts/echarts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="7" column="4026" selection-start-line="7" selection-start-column="4026" selection-end-line="7" selection-end-column="4026" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/competition/competition-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/user/password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/DeptAdminAndLeader/paper-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2641">
+          <caret line="139" column="66" selection-start-line="139" selection-start-column="61" selection-end-line="139" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/competition/impl/CompetitionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="233" column="13" lean-forward="true" selection-start-line="233" selection-start-column="13" selection-end-line="233" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/impl/AcademicPaperDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="161" column="74" lean-forward="true" selection-start-line="161" selection-start-column="74" selection-end-line="162" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/upload/UploadAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#uploadPrizeImg#0;class#UploadAction#0" />
+            <element signature="method#uploadFile#0;class#UploadAction#0" />
+            <element signature="method#uploadPaperFile#0;class#UploadAction#0" />
+            <element signature="method#uploadMatchFile#0;class#UploadAction#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemCategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItem/impl/TeacherItemDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="74" column="70" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/impl/TeacherItemAnnexDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/TeacherItemAnnexDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/TeacherItemAnnexService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/impl/TeacherItemAnnexServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1962#1963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/match/MatchAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="124" column="47" lean-forward="true" selection-start-line="124" selection-start-column="47" selection-end-line="140" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="113" column="70" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="55" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="116" column="10" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/struts-biz.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1274">
+          <caret line="173" column="58" selection-start-line="173" selection-start-column="58" selection-end-line="173" selection-end-column="58" />
+          <folding>
+            <element signature="e#11190#11191#0" expanded="true" />
+            <element signature="e#11234#11235#0" expanded="true" />
+            <element signature="e#11273#11274#0" expanded="true" />
+            <element signature="e#11308#11309#0" expanded="true" />
+            <element signature="e#11364#11365#0" expanded="true" />
+            <element signature="e#11412#11413#0" expanded="true" />
+            <element signature="e#11451#11452#0" expanded="true" />
+            <element signature="e#11486#11487#0" expanded="true" />
+            <element signature="e#11542#11543#0" expanded="true" />
+            <element signature="e#11590#11591#0" expanded="true" />
+            <element signature="e#11629#11630#0" expanded="true" />
+            <element signature="e#11664#11665#0" expanded="true" />
+            <element signature="e#11720#11721#0" expanded="true" />
+            <element signature="e#11768#11769#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/action/teacherItemAnnex/TeacherItemAnnexAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="104" column="89" selection-start-line="104" selection-start-column="89" selection-end-line="104" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/my-paper-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="235" column="74" lean-forward="true" selection-start-line="235" selection-start-column="74" selection-end-line="251" selection-end-column="24" />
+          <folding>
+            <element signature="e#6432#8846#0" />
+            <element signature="e#10539#11451#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/my-charge-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="393" column="48" selection-start-line="393" selection-start-column="40" selection-end-line="393" selection-end-column="48" />
+          <folding>
+            <element signature="e#5384#8776#0" />
+            <element signature="e#8829#11685#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/academicPaper/paper-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="99" column="10" lean-forward="true" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/page/system/teacherItem/item-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="85" column="57" lean-forward="true" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1381,11 +1790,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|teacher_files</last-edited>
+          <last-edited>teacher_files</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

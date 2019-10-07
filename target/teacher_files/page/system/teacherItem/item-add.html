@@ -94,6 +94,27 @@
             <input type="text" name="endTime" id="endTime" lay-verify="required" placeholder="请选择项目结束时间" class="layui-input endTime">
         </div>
     </div>
+    <div class="layui-form-item">
+        <div class="layui-upload">
+            <button type="button" class="layui-btn layui-btn-normal" id="testList">选择多文件</button>
+            <div class="layui-inline layui-word-aux">单单文件上限10M</div>
+            <div class="layui-upload-list">
+                <table class="layui-table">
+                    <thead>
+                    <tr><th>文件名</th>
+                        <th>大小</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr></thead>
+                    <tbody id="demoList"></tbody>
+                </table>
+            </div>
+            <button type="button" class="layui-btn" id="testListAction">开始上传</button>
+            <input type="hidden" class="layui-input manyFilePath" id="manyFilePath" lay-verify="userFile" placeholder="文件地址"/>
+            <input type="hidden" class="manyFileName" id="manyFileName" />
+            <input type="hidden" class="manyFileType" id="manyFileType" />
+        </div>
+    </div>
     <div class="layui-form-item layui-hide">
         <input type="button" lay-submit lay-filter="addUser" id="addUser" value="确定" />
     </div>

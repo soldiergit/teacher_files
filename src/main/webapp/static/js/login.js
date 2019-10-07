@@ -28,7 +28,6 @@ layui.use(['form','layer','jquery'],function(){
                     return false;
                 }
                 if (data.code === 0 && data.data.userStatus===1){
-                    console.log(data.data);
                     //保存用户信息到session中
                     window.sessionStorage.setItem("userId",data.data.userId);
                     window.sessionStorage.setItem("teacherId",data.data.teacher.teacherId);

@@ -84,7 +84,8 @@ layui.use([ 'form', 'layer', 'upload', 'laydate'], function () {
     //上传获奖证书图片
     var uploadInst = upload.render({
         elem: '#imgUpload',
-        url: '/teacher_files_war/upload_uploadPrizeImg.action',
+        // url: '/teacher_files_war/upload_uploadPrizeImg.action',
+        url: '/teacher_files_war/upload_uploadImage.action',
         acceptMime: 'image/*',  //只显示图片文件
         auto: false,
         bindAction: '#startUpload',
@@ -118,29 +119,6 @@ layui.use([ 'form', 'layer', 'upload', 'laydate'], function () {
         }
     });
 
-    //拖拽上传pdf
-    upload.render({
-        elem: '#fileUpload',
-        url: '/teacher_files_war/upload_uploadFile.action',
-        accept: 'file',//指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
-        exts: 'pdf',
-        //文件提交上传前的回调
-        before: function(obj){
-            layer.load(); //上传loading
-        },
-        //执行上传请求后的回调
-        done: function (res) {
-            if (res.code === 0) {
-                layer.msg('上传成功!');
-                $('#filePath').val(res.src);
-                console.log($('#filePath').val())
-            } else {
-                layer.msg('上传失败!');
-            }
-            layer.closeAll('loading'); //关闭loading
-        }
-    });
-
     //当用户选中赛事时，内容根据竞赛类型改变  -- competitionType:lay-filter绑定的名称
     form.on("select(matchType)", function (data) {
         if (data.value == 1) {  //如果是大设赛
@@ -156,4 +134,26 @@ layui.use([ 'form', 'layer', 'upload', 'laydate'], function () {
             $('#instructor').hide();    //指导老师隐藏
         }
     });
+
+    //拖拽上传pdf
+    // upload.render({
+    //     elem: '#fileUpload',
+    //     url: '/teacher_files_war/upload_uploadFile.action',
+    //     accept: 'file',//指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
+    //     exts: 'pdf',
+    //     //文件提交上传前的回调
+    //     before: function(obj){
+    //         layer.load(); //上传loading
+    //     },
+    //     //执行上传请求后的回调
+    //     done: function (res) {
+    //         if (res.code === 0) {
+    //             layer.msg('上传成功!');
+    //             $('#filePath').val(res.src);
+    //         } else {
+    //             layer.msg('上传失败!');
+    //         }
+    //         layer.closeAll('loading'); //关闭loading
+    //     }
+    // });
 });

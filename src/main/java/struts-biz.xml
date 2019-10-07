@@ -69,6 +69,12 @@
                 <param name="root">r</param>
             </result>
         </action>
+		<!--赛事附件-->
+		<action name="teacherItemAnnex_*" class="com.teacherfiles.models.sys.action.teacherItemAnnex.TeacherItemAnnexAction" method="{1}">
+			<result name="success" type="json">
+				<param name="root">r</param>
+			</result>
+		</action>
         <!--教师项目类别-->
         <action name="teacherItemCategory_*" class="com.teacherfiles.models.sys.action.teacherItemCategory.TeacherItemCategoryAction" method="{1}">
             <result name="success" type="json">

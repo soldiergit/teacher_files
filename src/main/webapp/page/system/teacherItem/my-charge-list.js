@@ -295,6 +295,52 @@ layui.config({
                     body.find(".itemCategoryHide").val(edit.itemCategory.id);//使用中间变量记录项目信息
                     body.find(".itemLevelHide").val(edit.itemLevel.id);
                     body.find(".updateFlag").val(1);//更新
+
+                    //回显示文件
+                    $.ajax({
+                        type: "POST",
+                        url: '/teacher_files_war/biz/teacherItemAnnex_findByTeacherItemId.action',//数据接口
+                        data: {itemId: edit.itemId},
+                        success: function (data) {
+                            if (data.code === 0) {
+                                $.each(data.data, function (index, item) {
+                                    var oldtr = $(['<tr id="upload-'+ index +'">',
+                                        '<td>'+ item.fileName +'</td>',
+                                        // '<td>'+ (file.size/1014).toFixed(1) +'kb</td>',
+                                        '<td></td>',
+                                        '<td>已上传</td>',
+                                        '<td>',
+                                        '<button class="layui-btn layui-btn-xs layui-btn-danger demo-delete">删除</button>',
+                                        '</td>',
+                                        '</tr>'].join(''));
+
+                                    //删除
+                                    oldtr.find('.demo-delete').on('click', function(){
+                                        $.post("/teacher_files_war/biz/teacherItemAnnex_delete.action", {
+                                            itemAnnexId: item.itemAnnexId //将需要删除的itemAnnexId作为参数传入
+                                        }, function (data) {
+                                            if (data.code === 0) {
+                                                layer.msg("删除成功");
+                                            } else {
+                                                layer.msg("删除失败");
+                                            }
+                                            tableIns.reload();
+                                            layer.close(index);
+                                        });
+                                        oldtr.remove();//删除当前
+                                    });
+
+                                    body.find("#demoList").append(oldtr);
+                                });
+                            } else {
+                                layer.msg("未知错误，请联系管理员！" + data.msg);
+                            }
+
+                        },
+                        error: function () {
+                            layer.msg("可能是因为网络原因操作失败了，请重试，若多次重试不成功，请于网站管理员联系");
+                        }
+                    });
                     form.render();
                 }
             },
@@ -332,6 +378,23 @@ layui.config({
                 body.find(".endTime").val(util.toDateString(data.endTime, "yyyy-MM-dd"));
                 body.find(".personName").val(data.itemPerson.teacherName);//负责人
                 body.find(".memberName").val(data.memberName);//成员
+
+                var str = "";   //附件详情
+                $.ajax({
+                    type: "POST",
+                    url: '/teacher_files_war/biz/teacherItemAnnex_findByTeacherItemId.action',//数据接口
+                    data: {itemId: data.itemId},
+                    success: function (data) {
+                        if (data.code === 0) {
+                            $.each(data.data, function (index, item) {
+                                str += '<a class="fileCss" href="/teacher_files_war/download/download_downloadFile.action?' +
+                                    'downloadPath=' + item.filePath + '&filename=' + item.fileName + '">' + item.fileName + '</a><br>';
+                                // 'downloadPath=' + item.path + '&filename=《' + data.paperName + '》附件' + index + '">《' + data.paperName + '》附件' + index + '</a><br>';
+                            });
+                            body.find("#manyFile").html(str);
+                        }
+                    }});
+
                 form.render();
             }
         });

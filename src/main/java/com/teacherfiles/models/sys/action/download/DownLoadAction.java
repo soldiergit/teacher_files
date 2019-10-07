@@ -1,6 +1,7 @@
 package com.teacherfiles.models.sys.action.download;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ServletActionContext;
 
 import java.io.*;
 
@@ -25,14 +26,15 @@ public class DownLoadAction extends ActionSupport {
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException();
         }
-        contentType = "application/octet-stream";// 指定下载问文件的类型
+
+//        contentType = "application/octet-stream";// 指定下载文件的类型
+        // 自动判断下载文件类型
+        contentType = "multipart/form-data";
         return SUCCESS;
     }
 
     /**
      * 返回InputStream
-     *
-     * @return
      */
     public InputStream getInputStream() {
 //        InputStream inputStream = ServletActionContext.getServletContext().getResourceAsStream(fileName);

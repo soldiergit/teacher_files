@@ -35,7 +35,6 @@ layui.use(['form', 'layer'], function () {
 
     //修改密码
     form.on("submit(setPassword)", function (data) {
-        console.log(data);
         var index = layer.msg('提交中，请稍候', {icon: 16, time: false, shade: 0.8});
         //修改密码
         $.ajax({
@@ -48,11 +47,9 @@ layui.use(['form', 'layer'], function () {
             },
             success: function (data) {
                 if (data.code===2) {
-                    console.log(1);
                     layer.close(index);
                     top.layer.msg("原密码错误，请重新输入！");
                 } else if (data.code===0) {
-                    console.log(2);
                     setTimeout(function () {
                         layer.close(index);
                         layer.msg("修改成功,请重新登入!");

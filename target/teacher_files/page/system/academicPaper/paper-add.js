@@ -36,11 +36,11 @@ layui.use(['form','layer','upload','laydate'],function(){
     laydate.render({elem: '#publishTime' , type: 'date', done: function(value, date, endDate){}});
 
     form.on("submit(addUser)", function (data) {
-        var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
         //弹出loading
-        var index_load = top.layer.msg('数据提交中，请稍候', {icon: 16, time: false, shade: 0.8});
+        var index = top.layer.msg('数据提交中，请稍候', {icon: 16, time: false, shade: 0.8});
         // 实际使用时的提交信息
         $.post(updateFlag === '0' ? "/teacher_files_war/biz/paper_save.action" : "/teacher_files_war/biz/paper_update.action", {
+
             paperId: updateFlag === '0' ? null : $(".Id").val(),//id
             paperName: $(".paperName").val(),
             paperTitle: $(".paperTitle").val(),
@@ -57,16 +57,18 @@ layui.use(['form','layer','upload','laydate'],function(){
             teacherId : data.field.teacherId,
             paperGradeId : data.field.paperGrade,
         }, function (res) {
-            layer.close(index_load);
             if (res.code === 0) {
+                top.layer.close(index);
                 top.layer.msg(updateFlag === '0' ? "添加论文成功！" : "修改论文成功!");
+                layer.closeAll("iframe");
                 //刷新父页面
                 parent.location.reload();
             } else {
+                top.layer.close(index);
                 top.layer.msg("操作失败！");
             }
         });
-        parent.layer.close(index); //再执行关闭
+        return false;
     });
 
     var fileUrls = "";  //用于保存所有文件返回的地址
@@ -76,7 +78,8 @@ layui.use(['form','layer','upload','laydate'],function(){
     var demoListView = $('#demoList'),
         uploadListIns = upload.render({
         elem: '#testList',
-        url: '/teacher_files_war/upload_uploadPaperFile.action',
+        // url: '/teacher_files_war/upload_uploadPaperFile.action',
+        url: '/teacher_files_war/upload_uploadAnnex.action',
         accept: 'file', //指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
         size: 10240,    //设置单个文件最大可允许上传的大小，单位 KB
         number:10,    //设置单最大上传的数量
@@ -140,11 +143,6 @@ layui.use(['form','layer','upload','laydate'],function(){
 
     //添加验证规则
     form.verify({
-        //确认密码
-        manyFile: function (value) {
-            if (value==null ||value=="" ||value==undefined) {
-                return "请上传附件！";
-            }
-        }
+        userFile: function (value) {if (value == null || value=="") return "请上传论文附件！";}
     })
 });

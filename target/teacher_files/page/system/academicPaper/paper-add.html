@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
 </head>
 <body class="childrenBody">
-<form class="layui-form" id="userInfo" lay-filter="userInfo" style="width:80%;">
+<form class="layui-form" style="width:80%;">
     <div class="layui-form-item">
         <label class="layui-form-label">论文名称</label>
         <div class="layui-input-block">
@@ -110,7 +110,7 @@
                 </table>
             </div>
             <button type="button" class="layui-btn" id="testListAction">开始上传</button>
-            <input type="hidden" class="manyFilePath" id="manyFilePath"/>
+            <input type="hidden" class="layui-input manyFilePath" id="manyFilePath" lay-verify="userFile" placeholder="文件地址"/>
             <input type="hidden" class="manyFileName" id="manyFileName" />
             <input type="hidden" class="manyFileType" id="manyFileType" />
         </div>

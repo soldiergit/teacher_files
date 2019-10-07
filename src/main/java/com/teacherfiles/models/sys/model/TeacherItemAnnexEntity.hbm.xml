@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.teacherfiles.models.sys.model.TeacherItemAnnexEntity" table="teacher_item_annex" schema="teacher_files">
+        <id name="itemAnnexId">
+            <column name="item_annex_id" sql-type="int(11)"/>
+        </id>
+        <property name="filePath">
+            <column name="file_path" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="fileName">
+            <column name="file_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="fileType">
+            <column name="file_type" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="itemId">
+            <column name="item_id"   sql-type="int(11)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

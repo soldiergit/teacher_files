@@ -20,6 +20,33 @@
                     <input class="layui-input" name="id" id="dataReload" placeholder="请输入查询条件" autocomplete="off"/>
                 </div>
                 <button class="layui-btn layuiadmin-btn-list reloadBtn" data-type="reload">搜索</button>
+
+                <div class="layui-inline">
+                    <form class="layui-form">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">年度</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="queryTime" id="queryTime" class="layui-input queryTime" />
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">论文等级</label>
+                            <div class="layui-input-inline">
+                                <select id="paperGrade" class="paperGrade" lay-filter="paperGrade" lay-search=""></select>
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">论文类型</label>
+                            <div class="layui-input-inline">
+                                <select id="paperType" class="paperType" lay-filter="paperType" lay-search="">
+                                    <option value="">请选择</option>
+                                    <option value="3,1">教改类</option>
+                                    <option value="3,2">科研类</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <table id="infoList" lay-filter="infoList"></table>

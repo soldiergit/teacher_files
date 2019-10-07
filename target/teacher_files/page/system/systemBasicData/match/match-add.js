@@ -63,7 +63,8 @@ layui.use([ 'form', 'layer', 'upload', 'laydate'], function () {
     var demoListView = $('#demoList'),
         uploadListIns = upload.render({
             elem: '#testList',
-            url: '/teacher_files_war/upload_uploadMatchFile.action',
+            // url: '/teacher_files_war/upload_uploadMatchFile.action',
+            url: '/teacher_files_war/upload_uploadAnnex.action',
             accept: 'file', //指定允许上传时校验的文件类型，可选值有：images（图片）、file（所有文件）、video（视频）、audio（音频）
             size: 10240,    //设置单个文件最大可允许上传的大小，单位 KB
             number:10,    //设置单最大上传的数量

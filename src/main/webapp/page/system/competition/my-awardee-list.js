@@ -243,7 +243,7 @@ layui.config({
                 body.find(".prizeLevel").val(data.prizeLevel.title);
                 body.find(".prizeGrade").val(data.prizeGrade.title);
                 body.find(".prizeImg").val(data.prizeImg);
-                body.find(".imgPreview").attr('src', data.prizeImg);//图片显示
+                body.find("#imgPreview").attr('src', data.prizeImg);//图片显示
                 form.render();
             }
         });
