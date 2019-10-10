@@ -149,6 +149,8 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util', 'laydate'], function () {
                     body.find(".periodicalNumber").val(edit.periodicalNumber);
                     body.find(".publishTime").val(util.toDateString(edit.publishTime, "yyyy-MM-dd"));
                     body.find(".teacherHide").val(edit.teacher.teacherId);//使用中间变量选中作者
+                    body.find(".personHide").val(edit.teacher.teacherId);//使用中间变量记录作者
+                    body.find(".memberHide").val(edit.itemMember);//使用中间变量记录成员
                     body.find(".paperGradeHide").val(edit.paperGrade.id);//使用中间变量选中论文等级
                     body.find(".updateFlag").val(1);//更新
 
@@ -234,6 +236,7 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util', 'laydate'], function () {
                 body.find(".publishTime").val(util.toDateString(data.publishTime, "yyyy年MM月dd日"));
                 body.find(".periodicalName").val(data.periodicalName);
                 body.find(".periodicalNumber").val(data.periodicalNumber);
+                body.find(".memberName").val(data.memberName);//成员
                 var str = "";   //附件详情
                 $.ajax({
                     type: "POST",
@@ -294,11 +297,20 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util', 'laydate'], function () {
         //重新渲染select
         form.render('select');
     });
+    $.post("/teacher_files_war/biz/teacher_findAllByDept.action?deptId="+deptId, function (data) {//--主持人
+        $('#authorId').append(new Option("请选择", ""));
+        $.each(data.data, function (index, item) {
+            $('#authorId').append(new Option(item.teacherName, "5,"+item.teacherId));
+        });
+        //重新渲染select
+        form.render('select');
+    });
 
     //当用户选中所属部门时，重载表格  -- unitId:lay-filter绑定的名称
     form.on("select(paperGrade)", function (data) {reloadTable(data)});
     form.on("select(paperType)", function (data) {reloadTable(data)});
     form.on("select(unitId)", function (data) {reloadTable(data)});
+    form.on("select(authorId)", function (data) { reloadTable(data)});
     function reloadTable(data) {
         var key = data.value=="" ? null : data.value;
         //执行重载

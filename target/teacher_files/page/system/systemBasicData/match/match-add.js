@@ -33,7 +33,8 @@ layui.use([ 'form', 'layer', 'upload', 'laydate'], function () {
             matchId: updateFlag === '0' ? null : $(".Id").val(),//id
             matchName: $(".matchName").val(),
             matchLevel: data.field.matchLevel,  //赛事级别
-            matchType: data.field.matchType,  //赛事类型
+            matchType: data.field.matchType,    //赛事类型
+            // matchAttribute: data.field.matchAttribute,    //赛事类型
             organizer: $(".organizer").val(),
             contractor: $(".contractor").val(),
 

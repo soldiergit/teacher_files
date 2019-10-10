@@ -81,6 +81,7 @@ layui.use(['form','layer','upload','laydate','util'],function(){
                 });
                 $('#imgPreview').attr('src', data.data.teacherImg); //图片显示
                 $('.teacherCode').prop("disabled", true);
+                $('.teacherName').prop("disabled", true);
                 $('.roleNames').prop("disabled", true);
                 $('#deptId').prop("disabled", true);
 

@@ -131,7 +131,7 @@ layui.use(['form','layer','table','laytpl','util'],function(){
                 if (edit) {
                     body.find(".Id").val(edit.teacherId);
                     body.find(".teacherCode").val(edit.teacherCode).prop("disabled", true);
-                    body.find(".teacherName").val(edit.teacherName);
+                    body.find(".teacherName").val(edit.teacherName).prop("disabled", true);
                     body.find(".roleName").val(edit.roleName);
                     body.find(".entryTime").val(util.toDateString(edit.entryTime, "yyyy-MM-dd"));
                     body.find(".teacherBirth").val(util.toDateString(edit.teacherBirth, "yyyy-MM-dd"));

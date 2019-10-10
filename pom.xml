@@ -57,18 +57,30 @@
       <scope>provided</scope>
     </dependency>
     <!-- MySQL驱动 -->
+    <!--<dependency>-->
+      <!--<groupId>mysql</groupId>-->
+      <!--<artifactId>mysql-connector-java</artifactId>-->
+      <!--<version>5.1.38</version>-->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.38</version>
+      <version>8.0.15</version>
     </dependency>
 
-    <!-- mchange C3P0 数据源 -->
+    <!--&lt;!&ndash; mchange C3P0 数据源 &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>com.mchange</groupId>-->
+      <!--<artifactId>c3p0</artifactId>-->
+      <!--<version>0.9.5.2</version>-->
+    <!--</dependency>-->
+    <!-- druid 数据源 -->
     <dependency>
-      <groupId>com.mchange</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.5-pre2</version>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.10</version>
     </dependency>
+
+
     <!-- junit -->
     <dependency>
       <groupId>junit</groupId>
@@ -200,26 +212,26 @@
       <version>4.5.5</version>
     </dependency>
     <!--shiro-->
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-core</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-ehcache</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-web</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.shiro</groupId>
-      <artifactId>shiro-spring</artifactId>
-      <version>${shiro.version}</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.apache.shiro</groupId>-->
+      <!--<artifactId>shiro-core</artifactId>-->
+      <!--<version>${shiro.version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.shiro</groupId>-->
+      <!--<artifactId>shiro-ehcache</artifactId>-->
+      <!--<version>${shiro.version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.shiro</groupId>-->
+      <!--<artifactId>shiro-web</artifactId>-->
+      <!--<version>${shiro.version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.apache.shiro</groupId>-->
+      <!--<artifactId>shiro-spring</artifactId>-->
+      <!--<version>${shiro.version}</version>-->
+    <!--</dependency>-->
   </dependencies>
 
   <build>

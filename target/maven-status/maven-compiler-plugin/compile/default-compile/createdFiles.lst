@@ -27,7 +27,6 @@ com/teacherfiles/models/sys/model/SysRoleEntity.class
 com/teacherfiles/models/sys/model/CompetitionPrizeLevelEntity.class
 com/teacherfiles/models/sys/dao/login/LoginDao.class
 com/teacherfiles/models/sys/model/TeacherEntity.class
-com/teacherfiles/utils/ShiroUtil.class
 com/teacherfiles/models/sys/dao/sysuser/UserDao.class
 com/teacherfiles/models/sys/model/DeptEntity.class
 com/teacherfiles/models/sys/service/academicPaperAnnex/AcademicPaperAnnexService.class

@@ -13,14 +13,32 @@ layui.use(['form','layer','upload','laydate'],function(){
     $.post("/teacher_files_war/biz/teacher_findAllByDept.action?deptId="+deptId, function (data) {
         $.each(data.data, function (index, item) {
             $('#sysBunk').append(new Option(item.teacherName+"_"+item.dept.deptName, item.teacherId));
+            //下拉框--搜索教师
+            $('#searchTeacher').append(new Option(item.teacherName+"_"+item.dept.deptName, item.teacherId));
+            //复选框--已选成员
+            $('#itemMember').append('<input type="checkbox" name="itemMembers" value="'+item.teacherId+'" lay-skin="primary" title="'+item.teacherName+'"/>');
         });
-        if (updateFlag === '0') {//添加，选中自己
-            $('#sysBunk').val(window.sessionStorage.getItem("teacherId"));
-        } else {//更新，选中作者
-            $('#sysBunk').val($('.teacherHide').val());
+        //更新的时候使用中间变量让其默认选中
+        if (updateFlag==='1') {
+            $('#sysBunk').val($('.personHide').val()).prop("disabled",true);//使用中间变量让其默认选中 【论文作者】
+            //多选框默认选中--js传递过来的数组会变成字符串，所有要转换--记得数组非空判断   【论文成员】
+            var arr = $('.memberHide').val().split(',');
+            if (arr != "" && arr.length != 0) {
+                for ( var i = 0; i <arr.length; i++){
+                    $(".itemMember input[value="+arr[i]+"]").prop("checked","checked").prop("disabled",true);
+                }
+            }
+        } else {
+            //否则根据当前用户选中
+            var thisTeacher = window.sessionStorage.getItem('teacherId');
+            $('#sysBunk').val(thisTeacher);
+            $(".itemMember input[value="+thisTeacher+"]").prop("checked","checked").prop("disabled",true);//当前用户就是成员--因为其被作为论文作者选中
         }
+        $('#searchTeacher').val('');
         //重新渲染select
         form.render('select');
+        //重新渲染checkbox
+        form.render('checkbox');
     });
     $.post("/teacher_files_war/biz/paperGrade_findAll.action", function (data) {
         $.each(data.data, function (index, item) {
@@ -36,6 +54,12 @@ layui.use(['form','layer','upload','laydate'],function(){
     laydate.render({elem: '#publishTime' , type: 'date', done: function(value, date, endDate){}});
 
     form.on("submit(addUser)", function (data) {
+        var ids = [];
+        var names = [];
+        $('input[name="itemMembers"]:checked').each(function(){
+            ids.push($(this).val());//将选中的值添加到数组chk_value中
+            names.push(this.title);//将选中的值添加到数组chk_value中
+        });
         //弹出loading
         var index = top.layer.msg('数据提交中，请稍候', {icon: 16, time: false, shade: 0.8});
         // 实际使用时的提交信息
@@ -54,6 +78,9 @@ layui.use(['form','layer','upload','laydate'],function(){
             manyFilePath: $(".manyFilePath").val(),//文件路径
             manyFileName: $(".manyFileName").val(),//文件原名称
             manyFileType: $(".manyFileType").val(),//文件类型
+
+            itemMember : ids.join(','),//成员+作者--》id
+            memberName : names.join(','),//成员+作者--》姓名
             teacherId : data.field.teacherId,
             paperGradeId : data.field.paperGrade,
         }, function (res) {
@@ -69,6 +96,20 @@ layui.use(['form','layer','upload','laydate'],function(){
             }
         });
         return false;
+    });
+
+    //当用户选中作者时，成员多选框中自动选中作者  -- sysBunk:lay-filter绑定的名称
+    form.on("select(sysBunk)", function (data) {
+        $(".itemMember input[value="+data.value+"]").prop("checked","checked");
+        //重新渲染checkbox
+        form.render('checkbox');
+    });
+
+    //当用户选中成员时，成员多选框中自动该成员  -- searchTeacher:lay-filter绑定的名称
+    form.on("select(searchTeacher)", function (data) {
+        $(".itemMember input[value="+data.value+"]").prop("checked","checked");
+        //重新渲染checkbox
+        form.render('checkbox');
     });
 
     var fileUrls = "";  //用于保存所有文件返回的地址

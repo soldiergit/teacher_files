@@ -39,10 +39,12 @@ public class UploadAction extends ActionSupport {
     public String uploadAnnex() {
         //等于 /teacher_files_war
         String projectName = ServletActionContext.getServletContext().getContextPath();
-        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/" + RandomUtils.getRandomNums() + "/";
+        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/annex/";
 
         // 获取原文件图片后缀，以最后的.作为截取(.excel)
         String extName = fileFileName.substring(fileFileName.lastIndexOf("."));
+        //保存原始文件名
+        String oldFileName = fileFileName;
 
         //  文件保存路径
         try {
@@ -55,7 +57,7 @@ public class UploadAction extends ActionSupport {
         //返回前台路径，用于保存到数据库
         r = R.ok()
                 .put("src", UPLOAD_FILES_PATH+fileFileName)
-                .put("fileName", fileFileName)
+                .put("fileName", oldFileName)
                 .put("fileType", extName);
 
         logger.info("上传附件："+r);
@@ -68,7 +70,7 @@ public class UploadAction extends ActionSupport {
      */
     public String uploadImage() {
         String projectName = ServletActionContext.getServletContext().getContextPath();
-        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/" + RandomUtils.getRandomNums() + "/";
+        String UPLOAD_FILES_PATH = ConfigApi.UPLOAD_URL+projectName + "/images/";
 
         //  文件保存路径
         try {
@@ -79,7 +81,7 @@ public class UploadAction extends ActionSupport {
         }
 
         //返回前台路径，用于保存到数据库
-        r = R.ok().put("src", "/tomcat_annex"+projectName + "/"+ RandomUtils.getRandomNums() + "/"+fileFileName);
+        r = R.ok().put("src", "/tomcat_annex"+projectName + "/images/"+fileFileName);
 
         logger.info("上传图片："+r);
 
@@ -87,9 +89,18 @@ public class UploadAction extends ActionSupport {
     }
 
     private void saveFile(String path) throws IOException {
+
+        // 获取原文件图片后缀，以最后的.作为截取(.jpg)
+        String extName = fileFileName.substring(fileFileName.lastIndexOf("."));
+        // 生成自定义的新文件名，这里以UUID.jpg|png|xxx作为格式（可选操作，也可以不自定义新文件名）
+        String uuid = UUID.randomUUID().toString();
+
         //  文件保存路径
         File fileFolder = new File(path);
         if(!fileFolder.exists()) fileFolder.mkdirs();
+
+        //修改文件名称
+        fileFileName = uuid+extName;
         FileUtils.copyFile(file, new File(fileFolder, fileFileName));
     }
 

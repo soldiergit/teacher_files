@@ -179,8 +179,10 @@ public class CompetitionDaoImpl implements CompetitionDao {
 
             String[] thisKey = key.split(",");
             if ("0".equals(thisKey[0])) {
-                dis.add(Restrictions.like("itemName", thisKey[1], MatchMode.ANYWHERE));
-                criteria.add(dis);
+                if (thisKey.length == 2) {
+                    dis.add(Restrictions.like("itemName", thisKey[1], MatchMode.ANYWHERE));
+                    criteria.add(dis);
+                }
             } else if ("1".equals(thisKey[0])) {
                 try {
                     Integer newKey = Integer.valueOf(thisKey[1]);

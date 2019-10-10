@@ -17,6 +17,9 @@
         <property name="matchType">
             <column name="match_type" sql-type="int(11)" not-null="true"/>
         </property>
+        <!--<property name="matchAttribute">-->
+            <!--<column name="match_attribute" sql-type="int(11)" not-null="true"/>-->
+        <!--</property>-->
         <property name="organizer">
             <column name="organizer" sql-type="varchar(255)" not-null="true"/>
         </property>

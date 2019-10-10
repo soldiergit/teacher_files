@@ -9,6 +9,13 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="/teacher_files_war/static/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="/teacher_files_war/static/style/admin.css" media="all">
+    <!--文件下载a标签样式，已在list.js中指定a标签class-->
+    <style>
+        .fileCss{color:#252525; text-decoration:none; font-size: 20px;}
+        .fileCss:visited {text-decoration:none;}
+        .fileCss:hover {color:#ba2636;text-decoration:underline;}
+        .fileCss:active {color:#ba2636;}
+    </style>
 </head>
 <body class="childrenBody">
 <form class="layui-form" style="width:80%;">
@@ -45,6 +52,17 @@
             </select>
         </div>
     </div>
+    <!--<div class="layui-form-item layui-row layui-col-xs12">-->
+        <!--<label class="layui-form-label">赛事类型</label>-->
+        <!--<div class="layui-input-block">-->
+            <!--<select name="matchAttribute" class="matchAttribute">-->
+                <!--<option value="1">学生个人赛</option>-->
+                <!--<option value="2">学生团体赛</option>-->
+                <!--<option value="3">教师个人赛</option>-->
+                <!--<option value="4">教师团体赛</option>-->
+            <!--</select>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="layui-form-item layui-row layui-col-xs12">
         <label class="layui-form-label">主办单位</label>
         <div class="layui-input-block">

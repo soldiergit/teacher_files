@@ -21,6 +21,14 @@
           </div>
           <button class="layui-btn layuiadmin-btn-list reloadBtn" data-type="reload">搜索</button>
 
+          <!--
+              * 0:根据名称等String类型查询
+              * 1：年度
+              * 2：论文等级--paper_grade_id外键
+              * 3：论文类型--paperType论文类型：科研、教改
+              * 4：根据指导老师所属教研室--teacher.unitIds
+              * 5：作者id
+                -->
           <div class="layui-inline">
             <form class="layui-form">
               <div class="layui-inline">
@@ -49,6 +57,12 @@
                 <label class="layui-form-label">所属教研室</label>
                 <div class="layui-input-inline">
                   <select id="unitId" class="unitId" lay-filter="unitId" lay-search=""></select>
+                </div>
+              </div>
+              <div class="layui-inline">
+                <label class="layui-form-label">作者</label>
+                <div class="layui-input-inline">
+                  <select id="authorId" class="authorId" lay-filter="authorId" lay-search=""></select>
                 </div>
               </div>
             </form>

@@ -18,11 +18,11 @@ layui.use(['form','layer','table','laytpl'],function(){
             {type: "checkbox", fixed:"left", width:50},
             // {field: 'matchId', title: 'Id', align:'center'},
             {field: 'matchName', title: '赛事名称', minWidth:200, align:"center"},
-            {field: 'matchLevel', title: '赛事级别', minWidth:100, align:'center', templet:function(d){
+            {field: 'matchLevel', title: '赛事级别', minWidth:50, align:'center', templet:function(d){
                     if (d.matchLevel=='1') return '国家级';
                     if (d.matchLevel=='2') return '省级';
                 }},
-            {field: 'matchType', title: '赛事类型', minWidth:100, align:'center', templet:function(d){
+            {field: 'matchType', title: '赛事类型', minWidth:50, align:'center', templet:function(d){
                     if (d.matchType=='1') return '学科竞赛';
                     if (d.matchType=='2') return '教学竞赛';
                     if (d.matchType=='3') return '创新创业';
@@ -36,7 +36,7 @@ layui.use(['form','layer','table','laytpl'],function(){
             {field: 'deptName', title: '所在部门', minWidth:100, align:'center', templet:function(d){
                     return d.teacher.dept.deptName;
                 }},
-            {title: '操作', minWidth:175, templet:'#infoListBar',fixed:"right",align:"center"}
+            {title: '操作', minWidth:200, templet:'#infoListBar',fixed:"right",align:"center"}
         ]]
     });
 
@@ -131,6 +131,7 @@ layui.use(['form','layer','table','laytpl'],function(){
                     body.find(".matchName").val(edit.matchName).prop("disabled", true);
                     body.find(".matchLevel").val(edit.matchLevel);
                     body.find(".matchType").val(edit.matchType);
+                    // body.find(".matchAttribute").val(edit.matchAttribute);
                     body.find(".organizer").val(edit.organizer);
                     body.find(".contractor").val(edit.contractor);
                     body.find(".teacherHide").val(edit.teacher.teacherId);//使用中间变量记录赛事负责人
@@ -211,6 +212,7 @@ layui.use(['form','layer','table','laytpl'],function(){
                 body.find(".matchName").val(data.matchName);
                 body.find(".matchLevel").val(data.matchLevel);
                 body.find(".matchType").val(data.matchType);
+                // body.find(".matchAttribute").val(data.matchAttribute);
                 body.find(".organizer").val(data.organizer);
                 body.find(".contractor").val(data.contractor);
                 body.find(".teacherName").val(data.teacher.teacherName);

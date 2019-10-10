@@ -25,6 +25,8 @@ public class AcademicPaperEntity {
     private String periodicalName;
     private String periodicalNumber;
     private Date publishTime;
+    private String itemMember;//成员，多个
+    private String memberName;//冗余数据
     private TeacherEntity teacher;  //单向一对一，可以从关联的一方去查询另一方，却不能反向查询
     private AcademicPaperGradeEntity paperGrade;  //单向一对一，可以从关联的一方去查询另一方，却不能反向查询
 
@@ -119,6 +121,26 @@ public class AcademicPaperEntity {
         this.publishTime = publishTime;
     }
 
+    @Basic
+    @Column(name = "item_member", nullable = true, length = 255)
+    public String getItemMember() {
+        return itemMember;
+    }
+
+    public void setItemMember(String itemMember) {
+        this.itemMember = itemMember;
+    }
+
+    @Basic
+    @Column(name = "member_name", nullable = true, length = 255)
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -132,12 +154,14 @@ public class AcademicPaperEntity {
                 Objects.equals(signUnit, that.signUnit) &&
                 Objects.equals(periodicalName, that.periodicalName) &&
                 Objects.equals(periodicalNumber, that.periodicalNumber) &&
-                Objects.equals(publishTime, that.publishTime);
+                Objects.equals(publishTime, that.publishTime) &&
+                Objects.equals(itemMember, that.itemMember) &&
+                Objects.equals(memberName, that.memberName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(paperId, paperName, paperType, paperTitle, teacherType, signUnit, periodicalName, periodicalNumber, publishTime);
+        return Objects.hash(paperId, paperName, paperType, paperTitle, teacherType, signUnit, periodicalName, periodicalNumber, publishTime, itemMember, memberName);
     }
 
     /**

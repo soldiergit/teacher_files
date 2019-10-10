@@ -20,6 +20,7 @@ public class MatchEntity {
     private String matchName;
     private Integer matchLevel;
     private Integer matchType;
+//    private Integer matchAttribute;  //赛事属性：用于添加竞赛项目时，有无指老师等
     private String organizer;
     private String contractor;
 //    private Date matchTime;//赛事年份
@@ -66,6 +67,16 @@ public class MatchEntity {
         this.matchType = matchType;
     }
 
+//    @Basic
+//    @Column(name = "match_attribute", nullable = true)
+//    public Integer getMatchAttribute() {
+//        return matchAttribute;
+//    }
+//
+//    public void setMatchAttribute(Integer matchAttribute) {
+//        this.matchAttribute = matchAttribute;
+//    }
+
     @Basic
     @Column(name = "organizer", nullable = true, length = 255)
     public String getOrganizer() {
@@ -107,12 +118,14 @@ public class MatchEntity {
                 Objects.equals(matchName, that.matchName) &&
                 Objects.equals(matchLevel, that.matchLevel) &&
                 Objects.equals(matchType, that.matchType) &&
+//                Objects.equals(matchAttribute, that.matchAttribute) &&
                 Objects.equals(organizer, that.organizer) &&
                 Objects.equals(contractor, that.contractor);
     }
 
     @Override
     public int hashCode() {
+//        return Objects.hash(matchId, matchName, matchLevel, matchType, matchAttribute, organizer, contractor);
         return Objects.hash(matchId, matchName, matchLevel, matchType, organizer, contractor);
     }
 

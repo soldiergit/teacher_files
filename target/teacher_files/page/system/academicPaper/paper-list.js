@@ -134,7 +134,7 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
             title: '添加文章',
             content: 'paper-add.html',
             maxmin: true,
-            area: ['800px', '700px'],
+            area: ['800px', '800px'],
             btn: ['确定', '取消'],
             success : function(layero, index){
                 var body = layui.layer.getChildFrame('body', index);
@@ -149,6 +149,8 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
                     body.find(".periodicalNumber").val(edit.periodicalNumber);
                     body.find(".publishTime").val(util.toDateString(edit.publishTime, "yyyy-MM-dd"));
                     body.find(".teacherHide").val(edit.teacher.teacherId);//使用中间变量选中作者
+                    body.find(".personHide").val(edit.teacher.teacherId);//使用中间变量记录作者
+                    body.find(".memberHide").val(edit.itemMember);//使用中间变量记录成员
                     body.find(".paperGradeHide").val(edit.paperGrade.id);//使用中间变量选中论文等级
                     body.find(".updateFlag").val(1);//更新
 
@@ -234,6 +236,7 @@ layui.use(['form', 'layer', 'table', 'laytpl', 'util'], function () {
                 body.find(".publishTime").val(util.toDateString(data.publishTime, "yyyy年MM月dd日"));
                 body.find(".periodicalName").val(data.periodicalName);
                 body.find(".periodicalNumber").val(data.periodicalNumber);
+                body.find(".memberName").val(data.memberName);//成员
                 var str = "";   //附件详情
                 $.ajax({
                     type: "POST",

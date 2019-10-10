@@ -132,7 +132,7 @@ layui.use(['form','layer','upload','laydate','transfer','util'],function(){
         $(".itemMember input[value="+data.value+"]").prop("checked","checked");
         //重新渲染checkbox
         form.render('checkbox');
-    })
+    });
 
 
     var fileUrls = "";  //用于保存所有文件返回的地址

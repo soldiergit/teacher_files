@@ -32,5 +32,11 @@
         <property name="publishTime">
             <column name="publish_time" sql-type="date" not-null="true"/>
         </property>
+        <property name="itemMember">
+            <column name="item_member" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="memberName">
+            <column name="member_name" sql-type="varchar(255)" not-null="true"/>
+        </property>
     </class>
 </hibernate-mapping>

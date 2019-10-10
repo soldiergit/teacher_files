@@ -164,7 +164,8 @@ public class TeacherItemDaoImpl implements TeacherItemDao {
                             .setMaxResults(pageBean.getPageSize()).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list());
         }
 
-        pageBean.setTotal(Math.toIntExact((Long) session.createCriteria(TeacherItemEntity.class).add(Restrictions.like("itemMember", memberId))
+        pageBean.setTotal(Math.toIntExact((Long)
+                criteria
                 .setProjection(Projections.rowCount()).uniqueResult()));
 
         session.close();
@@ -198,11 +199,13 @@ public class TeacherItemDaoImpl implements TeacherItemDao {
 
             String[] thisKey = key.split(",");
             if ("0".equals(thisKey[0])) {
-                dis.add(Restrictions.like("itemName", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("contractNumber", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("itemMember", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("memberName", thisKey[1], MatchMode.ANYWHERE));
-                criteria.add(dis);
+                if (thisKey.length == 2) {
+                    dis.add(Restrictions.like("itemName", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("contractNumber", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("itemMember", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("memberName", thisKey[1], MatchMode.ANYWHERE));
+                    criteria.add(dis);
+                }
             } else if ("1".equals(thisKey[0])) {
                 try {
                     Integer newKey = Integer.valueOf(thisKey[1]);

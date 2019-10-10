@@ -1,8 +1,10 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/competitionPrizeGrade/impl/CompetitionPrizeGradeServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/CompetitionPrizeGradeEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/MatchEntity.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/TeacherItemAnnexService.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/utils/DateUtil.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/match/MatchDao.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/TeacherItemAnnexEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/utils/UrlFilter.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacherItemLevel/impl/TeacherItemLevelServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacherItemLevel/TeacherItemLevelService.java
@@ -17,8 +19,8 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/teacherItem/TeacherItemAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/DeptEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/sysmenuChildren/MenuChildrenAction.java
-/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/common/TestHttpClientSendWarnMsgDemo.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/sysmenuChildren/MenuChildrenDao.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/impl/TeacherItemAnnexDaoImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/dept/DeptAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/teacherItemCategory/TeacherItemCategoryAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/academicPaper/AcademicPaperDao.java
@@ -47,6 +49,7 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/common/action/ViewAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/competitionPrizeLevel/CompetitionPrizeLevelAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/competitionPrizeLevel/CompetitionPrizeLevelDao.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacherItemAnnex/impl/TeacherItemAnnexServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/competitionPrizeGrade/CompetitionPrizeGradeDao.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/sysmenu/impl/MenuServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/sysuser/SysUserAction.java
@@ -55,6 +58,7 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/academicPaper/AcademicPaperAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/CompetitionPrizeLevelEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/competition/CompetitionService.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/teacherItemAnnex/TeacherItemAnnexDao.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/teacherItemCategory/TeacherItemCategoryDao.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/sysmenu/MenuDao.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacher/TeacherService.java
@@ -63,6 +67,7 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/TeacherItemEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/academicPaperAnnex/impl/AcademicPaperAnnexServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/AcademicPaperAnnexEntity.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/utils/RandomUtils.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/dept/impl/DeptServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/teacher/impl/TeacherDaoImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/SysUserEntity.java
@@ -83,6 +88,7 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/student/StudentAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/teacher/impl/TeacherServiceImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/student/StudentDao.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/teacherItemAnnex/TeacherItemAnnexAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/sysmenu/MenuAction.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/TeacherItemCategoryEntity.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/service/academicPaperAnnex/AcademicPaperAnnexService.java
@@ -123,4 +129,5 @@
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/academicPaperGrade/AcademicPaperGradeDao.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/dao/sysrole/impl/RoleDaoImpl.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/model/SysRoleEntity.java
+/home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/common/config/ConfigApi.java
 /home/soldier/SOLDIER/IDE_project/idea_project/teacher_files/src/main/java/com/teacherfiles/models/sys/action/competitionPrizeGrade/CompetitionPrizeGradeAction.java

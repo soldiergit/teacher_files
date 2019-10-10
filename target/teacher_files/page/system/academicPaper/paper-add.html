@@ -20,6 +20,8 @@
             <input type="hidden" class="layui-input updateFlag" value="0"><!--更新-->
             <input type="hidden" class="layui-input Id">
             <input type="hidden" class="layui-input teacherHide"><!--中间变量-->
+            <input type="hidden" class="layui-input personHide"><!--中间变量-->
+            <input type="hidden" class="layui-input memberHide"><!--中间变量-->
             <input type="hidden" class="layui-input paperGradeHide"><!--中间变量-->
             <input type="text" name="paperName" lay-verify="required" placeholder="请输入论文名称" autocomplete="off"
                    class="layui-input paperName">
@@ -93,6 +95,18 @@
         <div class="layui-input-block">
             <select name="paperGrade" class="paperGrade" lay-verify="required" id="paperGrade" lay-search=""></select>
         </div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">搜索成员</label>
+        <div class="layui-input-block">
+            <!--加上lay-search属性，可以实现layui的select组件自带搜索功能-->
+            <select name="searchTeacher" lay-search="" lay-filter="searchTeacher" class="searchTeacher" id="searchTeacher"></select>
+        </div>
+        <div class="layui-inline layui-word-aux">输入教师关键信息:【姓名或所属部门】选中帮助您快速选择成员</div>
+    </div>
+    <div class="layui-form-item layui-row layui-col-xs12">
+        <label class="layui-form-label">已选成员</label>
+        <div class="layui-input-block itemMember" id="itemMember"></div>
     </div>
     <div class="layui-form-item">
         <div class="layui-upload">

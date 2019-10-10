@@ -232,7 +232,7 @@ layui.config({
                                 s: { font: { sz: 14, bold: true, color: { rgb: "FFFFAA00" } }, fill: { bgColor: { indexed: 64 }, fgColor: { rgb: "FFFF00" } } }
                             };
                         },
-                        personName: function (value, line, data) {
+                        itemPerson: function (value, line, data) {
                             return value.teacherName;
                         },
                         itemType: function (value, line, data) {
@@ -262,7 +262,7 @@ layui.config({
 
                     });
                     // 重点2！！！一般都需要加一个表头，表头的键名顺序需要与最终导出的数据一致
-                    data.unshift({itemId: '编号', itemName: '项目名称', personName: '主持人', awardee: '获奖人', itemType: '项目类型',
+                    data.unshift({itemId: '编号', itemName: '项目名称', itemPerson: '主持人', awardee: '获奖人', itemType: '项目类型',
                         itemCategory: '项目类别', createTime: '立项时间', itemMoney: '项目经费', itemLevel: '项目级别', memberName: '成员',
                         contractNumber: '合同编号', startTime: '起始时间', endTime: '结束时间'})
 

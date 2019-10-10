@@ -97,6 +97,8 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
      * 1：年度
      * 2：论文等级--paper_grade_id外键
      * 3：论文类型--paperType论文类型：科研、教改
+     * 4：根据指导老师所属教研室--teacher.unitIds
+     * 5：作者id
      */
     @Override
     public PageBean findByDept(Integer deptId, String key, PageBean<AcademicPaperEntity> pageBean) {
@@ -115,11 +117,13 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
 
             String[] thisKey = key.split(",");
             if ("0".equals(thisKey[0])) {
-                dis.add(Restrictions.like("paperName", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("paperTitle", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("periodicalName", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("periodicalNumber", thisKey[1], MatchMode.ANYWHERE));
-                criteria.add(dis);
+                if (thisKey.length == 2) {
+                    dis.add(Restrictions.like("paperName", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("paperTitle", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("periodicalName", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("periodicalNumber", thisKey[1], MatchMode.ANYWHERE));
+                    criteria.add(dis);
+                }
             } else if ("1".equals(thisKey[0])) {
                 if (thisKey.length == 2) {
                     criteria.add(Restrictions.like("publishTime", new java.sql.Date(DateUtil.string2Date(thisKey[1],"yyyy").getTime())));
@@ -144,6 +148,14 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
                     criteria.add(Restrictions.like("teacher.unitIds", thisKey[1], MatchMode.ANYWHERE));
                 } catch (Exception e) {
                     System.out.println("2，key:"+key+",不能转换为数字！");
+                }
+            } else if ("5".equals(thisKey[0])) {
+                try {
+                    // 在上面已经创建了连接关系
+                    Integer newKey = Integer.valueOf(thisKey[1]);
+                    criteria.add(Restrictions.eq("teacher.teacherId", newKey));
+                } catch (Exception e) {
+                    System.out.println("1，key:"+key+",不能转换为数字！");
                 }
             }
             List list = criteria.add(dis)
@@ -173,6 +185,8 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
      * 1：年度
      * 2：论文等级--paper_grade_id外键
      * 3：论文类型--paperType论文类型：科研、教改
+     * 4：根据指导老师所属教研室--teacher.unitIds
+     * 5：作者id
      */
     @Override
     public PageBean findByAuthor(Integer teacherId, String key, PageBean<AcademicPaperEntity> pageBean) {
@@ -192,11 +206,13 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
 
             String[] thisKey = key.split(",");
             if ("0".equals(thisKey[0])) {
-                dis.add(Restrictions.like("paperName", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("paperTitle", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("periodicalName", thisKey[1], MatchMode.ANYWHERE));
-                dis.add(Restrictions.like("periodicalNumber", thisKey[1], MatchMode.ANYWHERE));
-                criteria.add(dis);
+                if (thisKey.length == 2) {
+                    dis.add(Restrictions.like("paperName", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("paperTitle", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("periodicalName", thisKey[1], MatchMode.ANYWHERE));
+                    dis.add(Restrictions.like("periodicalNumber", thisKey[1], MatchMode.ANYWHERE));
+                    criteria.add(dis);
+                }
             } else if ("1".equals(thisKey[0])) {
                 if (thisKey.length == 2) {
                     criteria.add(Restrictions.like("publishTime", new java.sql.Date(DateUtil.string2Date(thisKey[1],"yyyy").getTime())));
@@ -214,6 +230,14 @@ public class AcademicPaperDaoImpl implements AcademicPaperDao {
                     criteria.add(Restrictions.eq("paperType", newKey));
                 } catch (Exception e) {
                     System.out.println("2，key:"+key+",不能转换为数字！");
+                }
+            } else if ("5".equals(thisKey[0])) {
+                try {
+                    // 在上面已经创建了连接关系
+                    Integer newKey = Integer.valueOf(thisKey[1]);
+                    criteria.add(Restrictions.eq("teacher.teacherId", newKey));
+                } catch (Exception e) {
+                    System.out.println("1，key:"+key+",不能转换为数字！");
                 }
             }
             List list = criteria.add(dis)
